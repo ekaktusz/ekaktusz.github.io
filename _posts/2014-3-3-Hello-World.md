@@ -1,10 +1,13 @@
 ---
 layout: post
-title: You're up and running!
+title: Synthetic Dataset Generation for Custom 3D Object Using Blender
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+# Overview
+During my thesis work I faced the problem of how purely documented is the subject of synthetically generated learning datasets for custom 3D objects. You might work in a simulation environment where pretrained neural networks won't work as precise as you expect or you just can't find any public dataset for the object you want to detect. I hope this can help you.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+My project is inspired **heavily** from [this](https://olestourko.github.io/2018/02/03/generating-convnet-training-data-with-blender-1.html) post from Oles Tourko about ConvNet training data with Blender. I used it for Darknet YOLO training.
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+# Guide
+<!---
+![_config.yml]({{ site.baseurl }}/images/first-post.png)-->

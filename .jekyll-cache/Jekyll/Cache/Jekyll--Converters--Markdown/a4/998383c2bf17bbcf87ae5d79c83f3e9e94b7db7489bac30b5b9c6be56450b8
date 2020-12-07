@@ -1,0 +1,8 @@
+I"�<h1 id="intro">Intro</h1>
+<p>During my thesis work I faced the problem for how purely documented is the subject of synthetically generated learning datasets for custom 3D objects. And it can happen pretty easily, that you work in a simulation environment, where pretrained neural networks won’t work as precise as you expect or you just can’t find any public dataset for the object you want to detect. I hope this can help you.</p>
+
+<p>My project is inspired <strong>heavily</strong> from <a href="https://olestourko.github.io/2018/02/03/generating-convnet-training-data-with-blender-1.html">this</a> post from Oles Tourko about Convnet training data with Blender. It aims
+<img src="/images/config.png" alt="_config.yml" /></p>
+
+<p>The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the <a href="https://github.com/barryclark/jekyll-now">Jekyll Now repository</a> on GitHub.</p>
+:ET
