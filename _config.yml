@@ -6,7 +6,7 @@
 name: Ekart Csaba
 
 # Short bio or description (displayed in the header)
-description: Computer Science Student & Developer Intern at Atos from Budapest
+description: Computer Science Student & Developer Intern from Budapest
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars.githubusercontent.com/ekaktusz
@@ -22,13 +22,13 @@ footer-links:
   facebook:
   flickr:
   github: ekaktusz
-  instagram:
-  linkedin:
+  instagram: ekaktusz
+  linkedin: csaba-ekart-538360146
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: ekaktusz
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
+  youtube: channel/UC_64101qCIIYuCbZflDIyXQ # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 

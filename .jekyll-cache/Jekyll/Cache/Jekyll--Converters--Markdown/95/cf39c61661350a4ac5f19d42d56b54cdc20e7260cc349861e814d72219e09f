@@ -1,0 +1,19 @@
+I"(<p>Warcraft 3 Reforged turned out to be peepeepoopoo and playing the old version is a huge pain in the butt, and after the long suffering I’ve been through I’ve decided to show you how to play with your friends with the old version.</p>
+
+<p><strong>I assume that the game is already installed on your PC.</strong></p>
+
+<p>Maybe you read that you need additional tool like Lancraft. <strong>You don’t.</strong> If you complete these steps you are ready to play with your friends.</p>
+
+<h2 id="1-download-and-install-hamachi--zero-tier--set-interface-metric">1. Download and install Hamachi / Zero Tier &amp;&amp; Set Interface Metric</h2>
+<p>Just follow the steps in this video:</p>
+<iframe width="720" height="400" src="http://www.youtube.com/embed/Tv8oBe9jeVk" frameborder="0" allowfullscreen=""></iframe>
+
+<h2 id="2-add-exception-to-firewall">2. Add exception to firewall</h2>
+<p>You’re almost ready, but you have to add a firewall exception to the Warcraft 3 and Frozen Throne exe. You can achieve this by doing similar steps to <a href="https://www.dummies.com/computers/pcs/computer-security/how-to-allow-firewall-exceptions-on-your-windows-10-laptop/">this</a> tutorial. Without this, you can see each other games in LAN menu, but you won’t be able to connect and get a time out.</p>
+
+<h2 id="3-play">3. Play</h2>
+<p>Now you can enjoy the game. Yay!</p>
+<p style="text-align: center;"><img src="/images/arthas.jpeg" alt="My image Name" /></p>
+
+<p>PS: If you still have issues, check the port in the gameplay settings. Should be set to the same, like 6112.</p>
+:ET
