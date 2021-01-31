@@ -3,11 +3,15 @@ layout: page
 title: About
 permalink: /about/
 ---
-
+<!-- 
 {:refdef: style="text-align: center;"}
-![My image Name](/images/arthas.jpeg)
+![My image Name](/images/sajat_kep.png =300x)
+{: refdef}-->
+{:refdef: style="text-align: center;"}
+<img src="/images/sajat_kep.png" height="400" class="center"/>
 {: refdef}
 
-I'm a Computer Science student at the city of Budapest.  Highly interested in Neural Networks, Computer Vision, 3D graphics, Android development and videogames.
+My name is Csaba Ekart and I'm a software developer from Budapest who is highly interested in neural networks, computer vision, 3D graphics, android development, computer security and privacy.
 
-This is my personal blog, I share posts that I think could be useful for others.
+This is my personal page, where I share posts that I think could be useful for others, and projects I'm working on.
+
