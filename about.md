@@ -11,7 +11,7 @@ permalink: /about/
 <img src="/images/sajat_kep.png" height="300" class="center"/>
 {: refdef}
 
-I'm Csaba Ekart, software developer from Budapest experienced with Java, C++ and Python. I'm highly interested in neural networks, computer vision, 3D graphics, android development, computer security and privacy.
+I'm Csaba Ekart, software engineer from Budapest, experienced with Java, C++ and Python. I'm highly interested in neural networks, computer vision, 3D graphics, android development, computer security and privacy.
 
 This is my personal page, where I share posts that I think could be useful for others, and projects I'm working on.
 
