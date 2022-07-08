@@ -1,0 +1,58 @@
+---
+layout: post
+published: false
+title: Working on a 2D SFML C++ Game Part 1.
+---
+
+
+
+building a c++ platformer game
+
+- no previous experience
+- just to learn programming
+- no deep conception, more like see what we can do and try to do it
+
+- choosing technology:
+ 	- avoid full game engines
+ 	- use something related to c++
+ 	- why not opengl
+ 	- sfml, sdl, raylib
+ 	
+ 	https://github.com/raizam/gamedev_libraries
+
+Gyaszmat premise:
+ - Platformer with satisfying movement and effects
+ - Rogue like design (?)
+ - Buff system which imrpoves characther attributes, maybe with expiration ( triple jump, faster movement, faster shooting etc.)
+ - NPC dialogues
+ 
+ https://www.youtube.com/watch?v=ce8cum_mnKA
+ https://www.youtube.com/watch?v=vFsJIrm2btU
+ https://www.youtube.com/watch?v=HU25BJH1PfY
+ https://www.youtube.com/watch?v=4RlpMhBKNr0
+ 
+ 
+ 
+ maplayer:
+ 
+ beolvasni az összes layert a mapfileból
+
+
+GUI system:
+
+Widget system:
+
+virtual draw()
+
+void handle(vent ev)
+
+label, button, textbox, listbox
+
+
+
+game paraméter state constructor ki az ősbe
+
+ladder : MapLayer
+{
+	
+}

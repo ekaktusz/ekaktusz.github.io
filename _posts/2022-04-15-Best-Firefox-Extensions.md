@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 title: Best Firefox Extensions I Use in 2022
 ---
 
