@@ -4,32 +4,7 @@ title: AppArmor Full System Policy on Debian 10
 excerpt_separator: <!--more-->
 ---
 Guide for using AppArmor with system wide Full System Policy for additional security on Debian 10 Buster.
-<!--more-->
-<style type="text/css">
-  // Adding 'Contents' headline to the TOC
-	#markdown-toc::before {
-	    content: "Contents";
-	    font-weight: bold;
-	}
 
-
-	// Using numbers instead of bullets for listing
-	#markdown-toc ul {
-	    list-style: decimal;
-	}
-
-	#markdown-toc {
-	    border: 1px solid #aaa;
-	    padding-left: 2em;
-	    padding-right: 2em;
-	    padding-top: 1em;
-	    padding-bottom: 1em;
-	    list-style: decimal;
-	    display: inline-block;
-	}
-</style>
-* Do not remove this line (it will not be displayed)
-{:toc}
 # Introduction
 
 While AppArmor is designed to deploy a policy for a specific application, which you consider security sensitive, and want to prevent system attacks through it's vulnerabilities, there are some cases (especially when you are working in a highly secure eg. millitary environment) when you expect different behavior: that all application is under some predeclared default deny policy, and *only* whitelisted applications can do anything on your machine, like with SELinux.
