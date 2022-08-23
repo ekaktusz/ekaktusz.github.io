@@ -17,7 +17,7 @@ order: 4
 {: refdef}
 
 
-I'm Csaba Ekart, Software Engineer from Budapest, experienced with Java, C++ and Python. I'm highly interested in neural networks, computer vision, 3D graphics, Android development, computer security and privacy.
+I'm Csaba Ekart, Software Engineer from Budapest, experienced with C++, Python, Java and Linux. I'm highly interested in neural networks, computer vision, 3D graphics, Android development, computer security and privacy.
 
 This is my personal page, where I share posts that I think could be useful for others, and projects I'm working on.
 
