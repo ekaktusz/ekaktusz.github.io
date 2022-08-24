@@ -6,9 +6,37 @@ excerpt_separator: <!--more-->
 
 During my thesis work I faced the problem of how purely documented is the subject of synthetically generated learning datasets for custom 3D objects, so here are my tips.
 
+<!--more-->
+
+<style type="text/css">
+  // Adding 'Contents' headline to the TOC
+	#markdown-toc::before {
+	    content: "Contents";
+	    font-weight: bold;
+	}
+
+
+	// Using numbers instead of bullets for listing
+	#markdown-toc ul {
+	    list-style: decimal;
+	}
+
+	#markdown-toc {
+	    border: 1px solid #aaa;
+	    padding-left: 2em;
+	    padding-right: 2em;
+	    padding-top: 1em;
+	    padding-bottom: 1em;
+	    list-style: decimal;
+	    display: inline-block;
+	}
+</style>
+
+* Do not remove this line (it will not be displayed)
+{:toc}
 ## Why would you need this?
-{:refdef: style="text-align: left;"}
-![My image Name](/assets/img/sajat/why.gif)
+{:refdef: style="text-align: center;"}
+![My image Name](/images/why.gif)
 {: refdef}
 
 You might work in a simulation environment where pretrained neural networks won't work as precise as you expect or you just can't find any public dataset for the object you want to detect. 
