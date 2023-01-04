@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building a C++ Platformer Game with SFML // Part I. Beginnings
+title: Building a C++ Platformer Game with SFML // Part 0. Beginnings
 ---
 
 <!--# Building a C++ Platformer Game - Part1: Beginnings-->
