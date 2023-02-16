@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 740px;
   padding: 0 10px;
   width: 100%;
 }
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 30px;
   a {
     color: inherit;
   }
@@ -65,7 +65,6 @@ h4 {
 }
 
 p {
-  font-size: 16px;
   margin: 15px 0;
   text-align: justify;
 }
@@ -244,7 +243,7 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 0.5em;
+  padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
 
@@ -269,7 +268,7 @@ nav {
 
   .read-more {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 

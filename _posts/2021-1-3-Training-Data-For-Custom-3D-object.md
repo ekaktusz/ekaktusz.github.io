@@ -3,7 +3,6 @@ layout: post
 title: Synthetic Dataset Generation for Custom 3D Object Using Blender
 excerpt_separator: <!--more-->
 ---
-
 During my thesis work I faced the problem of how purely documented is the subject of synthetically generated learning datasets for custom 3D objects, so here are my tips.
 
 <!--more-->
@@ -34,12 +33,23 @@ During my thesis work I faced the problem of how purely documented is the subjec
 
 * Do not remove this line (it will not be displayed)
 {:toc}
+
+Note: Since I wrote this post, several other people tried this with (probably) more understandable and effective codes, so I recommend checking them as well: 
+- [Data generation with Blender](https://federicoarenasl.github.io/Data-Generation-with-Blender/)
+- [https://github.com/Danny-Dasilva/Blender-ML](https://github.com/Danny-Dasilva/Blender-ML)
+- [Synthetic Data Generation for Computer Vision in Blender](https://betterprogramming.pub/synthetic-data-generation-for-computer-vision-in-blender-part-1-6926819b11e6)
+
+Either way this is still a 100% usable guide, and it worked once in 2020 so it should do today. Gave fun! :)
+
 ## Why would you need this?
+
 {:refdef: style="text-align: center;"}
 ![My image Name](/images/why.gif)
 {: refdef}
 
-You might work in a simulation environment where pretrained neural networks won't work as precise as you expect or you just can't find any public dataset for the object you want to detect. 
+
+
+You might work in a simulation environment where pretrained neural networks won't work as precise as you expect or you just can't find any public dataset for the object you want to detect. In my case this is exactly what happened, I worked with drones using ROS and Gazebo, and I wanted to use the drone camera image to detect objects with it using YOLO. 
 
 ## Sources
 My project is **heavily** inspired from [this](https://olestourko.github.io/2018/02/03/generating-convnet-training-data-with-blender-1.html) post from Oles Tourko about ConvNet training data with Blender. Check out his work, it's very very very useful.

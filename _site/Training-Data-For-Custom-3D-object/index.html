@@ -63,8 +63,9 @@
           </div>
 
           <nav>
-            <a href="/">Blog</a>
-            <a href="/about">About</a>
+            <a href="/">blog</a>
+            <a href="/projects">projects</a>
+            <a href="/about">about</a>
           </nav>
         </header>
       </div>
@@ -116,10 +117,21 @@
   </li>
   <li><a href="#training" id="markdown-toc-training">Training</a></li>
 </ul>
+
+<p>Note: Since I wrote this post, several other people tried this with (probably) more understandable and effective codes, so I recommend checking them as well:</p>
+<ul>
+  <li><a href="https://federicoarenasl.github.io/Data-Generation-with-Blender/">Data generation with Blender</a></li>
+  <li><a href="https://github.com/Danny-Dasilva/Blender-ML">https://github.com/Danny-Dasilva/Blender-ML</a></li>
+  <li><a href="https://betterprogramming.pub/synthetic-data-generation-for-computer-vision-in-blender-part-1-6926819b11e6">Synthetic Data Generation for Computer Vision in Blender</a></li>
+</ul>
+
+<p>Either way this is still a 100% usable guide, and it worked once in 2020 so it should do today. Gave fun! :)</p>
+
 <h2 id="why-would-you-need-this">Why would you need this?</h2>
+
 <p style="text-align: center;"><img src="/images/why.gif" alt="My image Name" /></p>
 
-<p>You might work in a simulation environment where pretrained neural networks won’t work as precise as you expect or you just can’t find any public dataset for the object you want to detect.</p>
+<p>You might work in a simulation environment where pretrained neural networks won’t work as precise as you expect or you just can’t find any public dataset for the object you want to detect. In my case this is exactly what happened, I worked with drones using ROS and Gazebo, and I wanted to use the drone camera image to detect objects with it using YOLO.</p>
 
 <h2 id="sources">Sources</h2>
 <p>My project is <strong>heavily</strong> inspired from <a href="https://olestourko.github.io/2018/02/03/generating-convnet-training-data-with-blender-1.html">this</a> post from Oles Tourko about ConvNet training data with Blender. Check out his work, it’s very very very useful.</p>
