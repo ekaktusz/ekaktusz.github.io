@@ -49,7 +49,7 @@ I hope you find what you looking for! Have a wonderful day! ☀️
     <span style="float:right;">
         Apr 2021 - Aug 2021
     </span>
-    <em>Everbrige Inc.</em>
+    <em>Atos Unify</em>
     <br>
      <ul>
         <li>C++(14), Java (8, TestNG, Maven), Python, Wireshark, Linux (Debian), Bash scripting, Docker, Thrift API</li>
@@ -62,7 +62,7 @@ I hope you find what you looking for! Have a wonderful day! ☀️
     <span style="float:right;">
         Mar 2019 - Apr 2021
     </span>
-    <em>Everbrige Inc.</em>
+    <em>Atos Unify</em>
     <br>
      <ul>
         <li>C++(14), CMake, Java (8, TestNG, Maven), Python, Wireshark, Linux (Debian), Bash scripting, Docker</li>
