@@ -1,15 +1,17 @@
 ---
 layout: post
 title: Updated PX4 ROS Noetic Setup Script for Ubuntu 20.04 Focal Fossa
+excerpt_separator: <!--more-->
 ---
 
 Updated the official /ubuntu_sim_ros_melodic.sh script from PX4 Devguide to support Ubuntu 20.04 Focal Fossa with ROS Noetic Ninjemys based on [https://github.com/PX4/Devguide/pull/1044](https://github.com/PX4/Devguide/pull/1044).
 
+<!--more-->
+
 Useful if you want to use the more recent version of ROS in the latest Ubuntu LTS release.
 
 The updated script also available on gists: [https://gist.github.com/ekaktusz/a1065a2a452567cb04b919b20fdb57c4](https://gist.github.com/ekaktusz/a1065a2a452567cb04b919b20fdb57c4)
-
-{% highlight bash %}
+{% highlight python %}
 #!/bin/bash
 
 ## Bash script for setting up ROS Noetic (with Gazebo 11) development environment for PX4 on Ubuntu LTS (20.04). 

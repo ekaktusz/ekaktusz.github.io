@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Building a C++ Platformer Game with SFML // Part 0. Beginnings
+excerpt_separator: <!--more-->
 ---
 
 <!--# Building a C++ Platformer Game - Part1: Beginnings-->
-So, me and one of my colleagues decided to start to work on a project that could teach us more about C++ and programming in general. Since I'm really interested in game development and computer graphics, creating a game seemed like a great idea.
+So, me and one of my colleagues decided to start toas work on a project that could teach us more about C++ and programming in general. Since I'm really interested in game development and computer graphics, creating a game seemed like a great idea.
 
+<!--more-->
 ​We didn't have any previous experience on these topics. The only relevant knowledge that was related was being somewhat familiar with C++.
 
 {:refdef: style="text-align: center;"}

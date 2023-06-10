@@ -68,6 +68,12 @@ body {
   font: 18px/1.4 Helvetica, Arial, sans-serif;
   color: #333;
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(18, 18, 18);
+    color: rgb(187, 187, 187);
+  }
+}
 
 .container {
   margin: 0 auto;
@@ -83,6 +89,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
+}
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3, h4, h5, h6 {
+    color: #eee;
+  }
 }
 @media screen and (max-width: 640px) {
   h1, h2, h3, h4, h5, h6 {
@@ -240,6 +251,11 @@ img {
   font-size: 28px;
   letter-spacing: 1px;
 }
+@media (prefers-color-scheme: dark) {
+  .site-name {
+    color: #fff;
+  }
+}
 
 .site-description {
   margin: -5px 0 0 0;
@@ -272,6 +288,11 @@ nav a {
   text-align: right;
   font-weight: 300;
   letter-spacing: 1px;
+}
+@media (prefers-color-scheme: dark) {
+  nav a {
+    color: #fff;
+  }
 }
 @media screen and (max-width: 640px) {
   nav a {
@@ -312,6 +333,13 @@ nav a {
   border-bottom: 1px solid #ddd;
   background-color: #eee;
 }
+@media (prefers-color-scheme: dark) {
+  .wrapper-footer {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    background-color: #222;
+  }
+}
 
 footer {
   padding: 20px 0;
@@ -319,7 +347,6 @@ footer {
 }
 
 .highlight {
-  background-color: #efefef;
   padding: 7px 7px 7px 10px;
   border: 1px solid #ddd;
   -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.1);

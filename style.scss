@@ -18,9 +18,14 @@ html {
 }
 
 body {
+  
 	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+  @media (prefers-color-scheme: dark) {
+    background: rgb(18, 18, 18);
+    color: rgb(187, 187, 187);
+  }
 }
 
 .container {
@@ -33,6 +38,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
+  @media (prefers-color-scheme: dark) {
+    color: $lightGray;
+  }
   font-weight: bold;
 
   line-height: 1.7;
@@ -194,6 +202,9 @@ img {
 .site-name {
   margin: 0;
   color: $darkGray;
+  @media (prefers-color-scheme: dark) {
+    color: $white;
+  }
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -227,6 +238,9 @@ nav {
   a {
     margin-left: 20px;
     color: $darkGray;
+    @media (prefers-color-scheme: dark) {
+      color: $white;
+    }
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -277,6 +291,12 @@ nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+
+  @media (prefers-color-scheme: dark) {
+    border-top: 1px solid $darkGray;
+    border-bottom: 1px solid $darkGray;
+    background-color: $darkerGray;
+  }
 }
 
 footer {
