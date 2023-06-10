@@ -270,6 +270,7 @@ img {
 @media screen and (max-width: 640px) {
   .site-description {
     margin: 3px 0;
+    text-align: center;
   }
 }
 
