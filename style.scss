@@ -166,6 +166,9 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
+  @media (prefers-color-scheme: dark) {
+    border-bottom: 1px solid $darkerGray;
+  }
 
   @include mobile {
     text-align: center;
@@ -257,8 +260,11 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   border-bottom: 1px solid $lightGray;
+  @media (prefers-color-scheme: dark) {
+    border-bottom: 1px solid $darkerGray;
+  }
 }
 
 .posts > .post:last-child {

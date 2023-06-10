@@ -208,6 +208,11 @@ img {
   padding: 20px 0;
   border-bottom: 1px solid #eee;
 }
+@media (prefers-color-scheme: dark) {
+  .masthead {
+    border-bottom: 1px solid #222;
+  }
+}
 @media screen and (max-width: 640px) {
   .masthead {
     text-align: center;
@@ -302,8 +307,13 @@ nav a {
 }
 
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   border-bottom: 1px solid #eee;
+}
+@media (prefers-color-scheme: dark) {
+  .posts > .post {
+    border-bottom: 1px solid #222;
+  }
 }
 
 .posts > .post:last-child {
