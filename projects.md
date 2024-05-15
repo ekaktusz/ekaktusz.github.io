@@ -6,6 +6,15 @@ permalink: /projects/
 
 Personal projects I've been working on. Mostly games / game development related stuff. Most things are open source here, so feel free too look at my spaghetti code.
 
+## Heels on Fire (Pirate Software Game Jam 14)
+![banner](/images/heels.png)
+[![Itch.io](https://img.shields.io/badge/Itch-%23FF0B34.svg?style=for-the-badge&logo=Itch.io&logoColor=white)](https://zahkros.itch.io/heels-on-fire)
+![Godot](https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/danigeri/ItsSpreadingTheGame) 
+
+Small jam game for Pirate Software Jam. Created in Godot with GDScript with several friends. We are preparing for a Steam release as well.
+
+
 ## Elephant In The Room (Game Off 2022 entry)
 ![banner](https://raw.githubusercontent.com/ekaktusz/elephant/master/assets/banner-github.png)
 [![Itch.io](https://img.shields.io/badge/Itch-%23FF0B34.svg?style=for-the-badge&logo=Itch.io&logoColor=white)](https://zahkros.itch.io/elephant-in-the-room)
