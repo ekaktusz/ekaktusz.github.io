@@ -65,7 +65,7 @@ html {
 
 body {
   background: #fff;
-  font: 18px/1.4 Helvetica, Arial, sans-serif;
+  font: 18px/1.4 "Space Grotesk", Arial, sans-serif;
   color: #333;
 }
 @media (prefers-color-scheme: dark) {
@@ -83,7 +83,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Space Grotesk", Arial, sans-serif;
   color: #222;
   font-weight: bold;
   line-height: 1.7;
@@ -127,12 +127,12 @@ p {
 }
 
 a {
-  color: #4183C4;
+  color: #F1C40F;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover, a:active {
-  color: #4183C4;
+  color: #F1C40F;
 }
 
 ul, ol {
@@ -234,7 +234,7 @@ img {
   margin: 0;
   color: #333;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Space Grotesk", Arial, sans-serif;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
