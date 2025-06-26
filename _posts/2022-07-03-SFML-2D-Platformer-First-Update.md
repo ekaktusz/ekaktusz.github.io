@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: Building a C++ Platformer Game with SFML // Part II. Let's make it work!
+title: C++ platformer using SFML // Part II. Let's make it work!
 ---
 
 So the first big update to the development is collisions and basic characther movement, and some interesting concepts as well, like parallex backgrounds, ladders, and a menu system.

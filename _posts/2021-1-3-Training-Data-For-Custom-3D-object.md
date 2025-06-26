@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Synthetic Dataset Generation for Custom 3D Object Using Blender
+title: Synthetic dataset generation for custom 3D object
 excerpt_separator: <!--more-->
 ---
 During my thesis work I faced the problem of how purely documented is the subject of synthetically generated learning datasets for custom 3D objects, so here are my tips.

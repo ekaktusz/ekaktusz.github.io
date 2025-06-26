@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Synthetic Dataset Generation for Custom 3D Object Using Blender – Csaba Ekart – Software Engineer from Budapest</title>
+    <title>Synthetic dataset generation for custom 3D object – csaba ekart – software engineer | hobby gamedev | likes hedgehogs</title>
 
         <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -16,11 +16,11 @@
 
 " />
     
-    <meta name="author" content="Csaba Ekart" />
+    <meta name="author" content="csaba ekart" />
 
     
-    <meta property="og:title" content="Synthetic Dataset Generation for Custom 3D Object Using Blender" />
-    <meta property="twitter:title" content="Synthetic Dataset Generation for Custom 3D Object Using Blender" />
+    <meta property="og:title" content="Synthetic dataset generation for custom 3D object" />
+    <meta property="twitter:title" content="Synthetic dataset generation for custom 3D object" />
     
 
     <!--[if lt IE 9]>
@@ -28,25 +28,25 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="Csaba Ekart - Software Engineer from Budapest" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="csaba ekart - software engineer | hobby gamedev | likes hedgehogs" href="/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Synthetic Dataset Generation for Custom 3D Object Using Blender | Csaba Ekart</title>
-<meta name="generator" content="Jekyll v4.3.1" />
-<meta property="og:title" content="Synthetic Dataset Generation for Custom 3D Object Using Blender" />
+<title>Synthetic dataset generation for custom 3D object | csaba ekart</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Synthetic dataset generation for custom 3D object" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="During my thesis work I faced the problem of how purely documented is the subject of synthetically generated learning datasets for custom 3D objects, so here are my tips." />
 <meta property="og:description" content="During my thesis work I faced the problem of how purely documented is the subject of synthetically generated learning datasets for custom 3D objects, so here are my tips." />
 <link rel="canonical" href="http://localhost:4000/Training-Data-For-Custom-3D-object/" />
 <meta property="og:url" content="http://localhost:4000/Training-Data-For-Custom-3D-object/" />
-<meta property="og:site_name" content="Csaba Ekart" />
+<meta property="og:site_name" content="csaba ekart" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-01-03T00:00:00+01:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Synthetic Dataset Generation for Custom 3D Object Using Blender" />
+<meta property="twitter:title" content="Synthetic dataset generation for custom 3D object" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-01-03T00:00:00+01:00","datePublished":"2021-01-03T00:00:00+01:00","description":"During my thesis work I faced the problem of how purely documented is the subject of synthetically generated learning datasets for custom 3D objects, so here are my tips.","headline":"Synthetic Dataset Generation for Custom 3D Object Using Blender","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Training-Data-For-Custom-3D-object/"},"url":"http://localhost:4000/Training-Data-For-Custom-3D-object/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2021-01-03T00:00:00+01:00","datePublished":"2021-01-03T00:00:00+01:00","description":"During my thesis work I faced the problem of how purely documented is the subject of synthetically generated learning datasets for custom 3D objects, so here are my tips.","headline":"Synthetic dataset generation for custom 3D object","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Training-Data-For-Custom-3D-object/"},"url":"http://localhost:4000/Training-Data-For-Custom-3D-object/"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -55,11 +55,11 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="/" class="site-avatar"><img src="https://avatars.githubusercontent.com/ekaktusz" /></a>
+          <a href="/" class="site-avatar"><img src="" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="/">Csaba Ekart</a></h1>
-            <p class="site-description">Software Engineer from Budapest</p>
+            <h1 class="site-name"><a href="/">csaba ekart</a></h1>
+            <p class="site-description">software engineer | hobby gamedev | likes hedgehogs</p>
           </div>
 
           <nav>
@@ -73,7 +73,7 @@
 
     <div id="main" role="main" class="container">
       <article class="post">
-  <h1>Synthetic Dataset Generation for Custom 3D Object Using Blender</h1>
+  <h1>Synthetic dataset generation for custom 3D object</h1>
 
   <div class="entry">
     <p>During my thesis work I faced the problem of how purely documented is the subject of synthetically generated learning datasets for custom 3D objects, so here are my tips.</p>
@@ -146,102 +146,102 @@
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#include &lt;iostream&gt;
 </span>
-<span class="kn">import</span> <span class="nn">bpy</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">math</span>
-<span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="n">bpy</span>
+<span class="kn">import</span> <span class="n">os</span>
+<span class="kn">import</span> <span class="n">random</span>
+<span class="kn">import</span> <span class="n">math</span>
+<span class="kn">import</span> <span class="n">time</span>
+<span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
 
 <span class="c1"># Change these values for personal need
-</span><span class="n">OBJECT_NAME</span> <span class="o">=</span> <span class="s">"Penguin"</span>
-<span class="n">OBJECT_PATH</span> <span class="o">=</span> <span class="s">"/home/ekaktusz/Downloads/pingvin/PenguinBaseMesh.blend"</span>
-<span class="n">CAMERA_NAME</span> <span class="o">=</span> <span class="s">"Camera"</span>
-<span class="n">LIGHT_NAME</span> <span class="o">=</span> <span class="s">"Light"</span>
-<span class="n">IMG_FOLDER_PATH</span> <span class="o">=</span> <span class="s">"/home/ekaktusz/Pictures/test_data/"</span>
+</span><span class="n">OBJECT_NAME</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Penguin</span><span class="sh">"</span>
+<span class="n">OBJECT_PATH</span> <span class="o">=</span> <span class="sh">"</span><span class="s">/home/ekaktusz/Downloads/pingvin/PenguinBaseMesh.blend</span><span class="sh">"</span>
+<span class="n">CAMERA_NAME</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Camera</span><span class="sh">"</span>
+<span class="n">LIGHT_NAME</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Light</span><span class="sh">"</span>
+<span class="n">IMG_FOLDER_PATH</span> <span class="o">=</span> <span class="sh">"</span><span class="s">/home/ekaktusz/Pictures/test_data/</span><span class="sh">"</span>
 <span class="n">RESOLUTION_X</span> <span class="o">=</span> <span class="mi">960</span>
 <span class="n">RESOLUTION_Y</span> <span class="o">=</span> <span class="mi">720</span>
-<span class="n">BACKGROUND_PATH</span><span class="o">=</span> <span class="s">"/home/ekaktusz/Pictures/hatterek_training/"</span>
+<span class="n">BACKGROUND_PATH</span><span class="o">=</span> <span class="sh">"</span><span class="s">/home/ekaktusz/Pictures/hatterek_training/</span><span class="sh">"</span>
 <span class="n">NUM_OF_TRAINING_DATA</span> <span class="o">=</span> <span class="mi">10</span>
 
 <span class="c1"># take a lot of pictures
 </span><span class="k">def</span> <span class="nf">create_training_data</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NUM_OF_TRAINING_DATA</span><span class="p">):</span>
-        <span class="n">rotate_object</span><span class="p">()</span>
-        <span class="n">place_light_random</span><span class="p">()</span>
-        <span class="n">place_camera_random</span><span class="p">()</span>
-        <span class="n">look_at_penguin</span><span class="p">()</span>
-        <span class="n">take_picture</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-        <span class="n">create_label_file</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">NUM_OF_TRAINING_DATA</span><span class="p">):</span>
+        <span class="nf">rotate_object</span><span class="p">()</span>
+        <span class="nf">place_light_random</span><span class="p">()</span>
+        <span class="nf">place_camera_random</span><span class="p">()</span>
+        <span class="nf">look_at_penguin</span><span class="p">()</span>
+        <span class="nf">take_picture</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="nf">create_label_file</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 
 <span class="c1"># take a picture from the camera
 </span><span class="k">def</span> <span class="nf">take_picture</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
     <span class="n">bpy</span><span class="p">.</span><span class="n">context</span><span class="p">.</span><span class="n">scene</span><span class="p">.</span><span class="n">render</span><span class="p">.</span><span class="n">film_transparent</span> <span class="o">=</span> <span class="bp">True</span>
-    <span class="n">bpy</span><span class="p">.</span><span class="n">context</span><span class="p">.</span><span class="n">scene</span><span class="p">.</span><span class="n">render</span><span class="p">.</span><span class="n">filepath</span> <span class="o">=</span> <span class="n">IMG_FOLDER_PATH</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="s">'.jpg'</span>
+    <span class="n">bpy</span><span class="p">.</span><span class="n">context</span><span class="p">.</span><span class="n">scene</span><span class="p">.</span><span class="n">render</span><span class="p">.</span><span class="n">filepath</span> <span class="o">=</span> <span class="n">IMG_FOLDER_PATH</span> <span class="o">+</span> <span class="nf">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="sh">'</span><span class="s">.jpg</span><span class="sh">'</span>
     <span class="n">bpy</span><span class="p">.</span><span class="n">context</span><span class="p">.</span><span class="n">scene</span><span class="p">.</span><span class="n">render</span><span class="p">.</span><span class="n">resolution_x</span> <span class="o">=</span> <span class="n">RESOLUTION_X</span>
     <span class="n">bpy</span><span class="p">.</span><span class="n">context</span><span class="p">.</span><span class="n">scene</span><span class="p">.</span><span class="n">render</span><span class="p">.</span><span class="n">resolution_y</span> <span class="o">=</span> <span class="n">RESOLUTION_Y</span>
-    <span class="n">bpy</span><span class="p">.</span><span class="n">ops</span><span class="p">.</span><span class="n">render</span><span class="p">.</span><span class="n">render</span><span class="p">(</span><span class="n">write_still</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+    <span class="n">bpy</span><span class="p">.</span><span class="n">ops</span><span class="p">.</span><span class="n">render</span><span class="p">.</span><span class="nf">render</span><span class="p">(</span><span class="n">write_still</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
 
 <span class="c1"># add a penguin object to the origo
 </span><span class="k">def</span> <span class="nf">add_object</span><span class="p">():</span>
     <span class="n">file_path</span> <span class="o">=</span> <span class="n">OBJECT_PATH</span>
-    <span class="n">inner_path</span> <span class="o">=</span> <span class="s">"Object"</span>
+    <span class="n">inner_path</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Object</span><span class="sh">"</span>
     <span class="n">object_name</span> <span class="o">=</span> <span class="n">OBJECT_NAME</span>
     
-    <span class="n">bpy</span><span class="p">.</span><span class="n">ops</span><span class="p">.</span><span class="n">wm</span><span class="p">.</span><span class="n">append</span><span class="p">(</span>
-        <span class="n">filepath</span><span class="o">=</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">inner_path</span><span class="p">,</span> <span class="n">object_name</span><span class="p">),</span>
-        <span class="n">directory</span><span class="o">=</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">inner_path</span><span class="p">),</span>
+    <span class="n">bpy</span><span class="p">.</span><span class="n">ops</span><span class="p">.</span><span class="n">wm</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span>
+        <span class="n">filepath</span><span class="o">=</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">inner_path</span><span class="p">,</span> <span class="n">object_name</span><span class="p">),</span>
+        <span class="n">directory</span><span class="o">=</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">inner_path</span><span class="p">),</span>
         <span class="n">filename</span><span class="o">=</span><span class="n">object_name</span>
         <span class="p">)</span>
 
 <span class="c1"># rotate to random direction
 </span><span class="k">def</span> <span class="nf">rotate_object</span><span class="p">():</span>
     <span class="n">my_object</span> <span class="o">=</span> <span class="n">bpy</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">objects</span><span class="p">[</span><span class="n">OBJECT_NAME</span><span class="p">]</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">radians</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">90</span><span class="p">,</span><span class="mi">90</span><span class="p">))</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">radians</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">90</span><span class="p">,</span><span class="mi">90</span><span class="p">))</span>
-    <span class="n">z</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">radians</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">359</span><span class="p">))</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="nf">radians</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">90</span><span class="p">,</span><span class="mi">90</span><span class="p">))</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="nf">radians</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">90</span><span class="p">,</span><span class="mi">90</span><span class="p">))</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="nf">radians</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">359</span><span class="p">))</span>
     <span class="n">my_object</span><span class="p">.</span><span class="n">rotation_euler</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span>
     <span class="n">my_object</span><span class="p">.</span><span class="n">rotation_euler</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span>
     <span class="n">my_object</span><span class="p">.</span><span class="n">rotation_euler</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">z</span>
 
 <span class="c1"># turn camera to object that we want to model
 </span><span class="k">def</span> <span class="nf">look_at_penguin</span><span class="p">():</span>
-    <span class="n">bpy</span><span class="p">.</span><span class="n">ops</span><span class="p">.</span><span class="nb">object</span><span class="p">.</span><span class="n">mode_set</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s">'OBJECT'</span><span class="p">)</span>
+    <span class="n">bpy</span><span class="p">.</span><span class="n">ops</span><span class="p">.</span><span class="nb">object</span><span class="p">.</span><span class="nf">mode_set</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="sh">'</span><span class="s">OBJECT</span><span class="sh">'</span><span class="p">)</span>
     <span class="n">my_object</span> <span class="o">=</span> <span class="n">bpy</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">objects</span><span class="p">[</span><span class="n">OBJECT_NAME</span><span class="p">]</span>
     <span class="n">default_camera</span> <span class="o">=</span> <span class="n">bpy</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">objects</span><span class="p">[</span><span class="n">CAMERA_NAME</span><span class="p">]</span>
     
-    <span class="n">point</span> <span class="o">=</span> <span class="n">my_object</span><span class="p">.</span><span class="n">matrix_world</span><span class="p">.</span><span class="n">to_translation</span><span class="p">()</span>
-    <span class="n">loc_camera</span> <span class="o">=</span> <span class="n">default_camera</span><span class="p">.</span><span class="n">matrix_world</span><span class="p">.</span><span class="n">to_translation</span><span class="p">()</span>
+    <span class="n">point</span> <span class="o">=</span> <span class="n">my_object</span><span class="p">.</span><span class="n">matrix_world</span><span class="p">.</span><span class="nf">to_translation</span><span class="p">()</span>
+    <span class="n">loc_camera</span> <span class="o">=</span> <span class="n">default_camera</span><span class="p">.</span><span class="n">matrix_world</span><span class="p">.</span><span class="nf">to_translation</span><span class="p">()</span>
 
     <span class="n">direction</span> <span class="o">=</span> <span class="n">point</span> <span class="o">-</span> <span class="n">loc_camera</span>
-    <span class="n">rot_quat</span> <span class="o">=</span> <span class="n">direction</span><span class="p">.</span><span class="n">to_track_quat</span><span class="p">(</span><span class="s">'-Z'</span><span class="p">,</span> <span class="s">'Y'</span><span class="p">)</span>
+    <span class="n">rot_quat</span> <span class="o">=</span> <span class="n">direction</span><span class="p">.</span><span class="nf">to_track_quat</span><span class="p">(</span><span class="sh">'</span><span class="s">-Z</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Y</span><span class="sh">'</span><span class="p">)</span>
 
-    <span class="n">default_camera</span><span class="p">.</span><span class="n">rotation_euler</span> <span class="o">=</span> <span class="n">rot_quat</span><span class="p">.</span><span class="n">to_euler</span><span class="p">()</span>
+    <span class="n">default_camera</span><span class="p">.</span><span class="n">rotation_euler</span> <span class="o">=</span> <span class="n">rot_quat</span><span class="p">.</span><span class="nf">to_euler</span><span class="p">()</span>
 
 <span class="c1"># place camera to random location
 </span><span class="k">def</span> <span class="nf">place_camera_random</span><span class="p">():</span>
-    <span class="n">bpy</span><span class="p">.</span><span class="n">ops</span><span class="p">.</span><span class="nb">object</span><span class="p">.</span><span class="n">mode_set</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s">'OBJECT'</span><span class="p">)</span>
+    <span class="n">bpy</span><span class="p">.</span><span class="n">ops</span><span class="p">.</span><span class="nb">object</span><span class="p">.</span><span class="nf">mode_set</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="sh">'</span><span class="s">OBJECT</span><span class="sh">'</span><span class="p">)</span>
     <span class="n">default_camera</span> <span class="o">=</span> <span class="n">bpy</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">objects</span><span class="p">[</span><span class="n">CAMERA_NAME</span><span class="p">]</span>
-    <span class="n">default_camera</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
-    <span class="n">default_camera</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
-    <span class="n">default_camera</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="n">default_camera</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="nf">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="n">default_camera</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="nf">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="n">default_camera</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="nf">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
 
 <span class="c1"># distance from camera to penguin
 </span><span class="k">def</span> <span class="nf">distance</span><span class="p">():</span>
     <span class="n">default_camera</span> <span class="o">=</span> <span class="n">bpy</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">objects</span><span class="p">[</span><span class="n">CAMERA_NAME</span><span class="p">]</span>
     <span class="n">my_object</span> <span class="o">=</span> <span class="n">bpy</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">objects</span><span class="p">[</span><span class="n">OBJECT_NAME</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">math</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span> <span class="p">(</span><span class="n">default_camera</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">my_object</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">x</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">default_camera</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">my_object</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">y</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>  <span class="o">+</span> <span class="p">(</span><span class="n">default_camera</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">z</span> <span class="o">-</span> <span class="n">my_object</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">z</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">)</span>
+    <span class="k">return</span> <span class="n">math</span><span class="p">.</span><span class="nf">sqrt</span><span class="p">(</span> <span class="p">(</span><span class="n">default_camera</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">my_object</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">x</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">default_camera</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">my_object</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">y</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>  <span class="o">+</span> <span class="p">(</span><span class="n">default_camera</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">z</span> <span class="o">-</span> <span class="n">my_object</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">z</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">)</span>
 
 <span class="c1"># place default light to random location
 </span><span class="k">def</span> <span class="nf">place_light_random</span><span class="p">():</span>
-    <span class="n">bpy</span><span class="p">.</span><span class="n">ops</span><span class="p">.</span><span class="nb">object</span><span class="p">.</span><span class="n">mode_set</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s">'OBJECT'</span><span class="p">)</span>
+    <span class="n">bpy</span><span class="p">.</span><span class="n">ops</span><span class="p">.</span><span class="nb">object</span><span class="p">.</span><span class="nf">mode_set</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="sh">'</span><span class="s">OBJECT</span><span class="sh">'</span><span class="p">)</span>
     <span class="n">default_light</span> <span class="o">=</span> <span class="n">bpy</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">objects</span><span class="p">[</span><span class="n">LIGHT_NAME</span><span class="p">]</span>
-    <span class="n">default_light</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
-    <span class="n">default_light</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
-    <span class="n">default_light</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="n">default_light</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="nf">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="n">default_light</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="nf">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
+    <span class="n">default_light</span><span class="p">.</span><span class="n">location</span><span class="p">.</span><span class="n">z</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="nf">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">clamp</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">minimum</span><span class="p">,</span> <span class="n">maximum</span><span class="p">):</span>
-    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">minimum</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">maximum</span><span class="p">))</span>
+    <span class="k">return</span> <span class="nf">max</span><span class="p">(</span><span class="n">minimum</span><span class="p">,</span> <span class="nf">min</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">maximum</span><span class="p">))</span>
 
 <span class="c1"># calculate bounding box on render image
 </span><span class="k">def</span> <span class="nf">camera_view_bounds_2d</span><span class="p">():</span>
@@ -249,16 +249,16 @@
     <span class="n">my_object</span> <span class="o">=</span> <span class="n">bpy</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">objects</span><span class="p">[</span><span class="n">OBJECT_NAME</span><span class="p">]</span>
     <span class="n">default_camera</span> <span class="o">=</span> <span class="n">bpy</span><span class="p">.</span><span class="n">data</span><span class="p">.</span><span class="n">objects</span><span class="p">[</span><span class="n">CAMERA_NAME</span><span class="p">]</span>
 
-    <span class="n">mat</span> <span class="o">=</span> <span class="n">default_camera</span><span class="p">.</span><span class="n">matrix_world</span><span class="p">.</span><span class="n">normalized</span><span class="p">().</span><span class="n">inverted</span><span class="p">()</span>
-    <span class="n">depsgraph</span> <span class="o">=</span> <span class="n">bpy</span><span class="p">.</span><span class="n">context</span><span class="p">.</span><span class="n">evaluated_depsgraph_get</span><span class="p">()</span>
-    <span class="n">mesh_eval</span> <span class="o">=</span> <span class="n">my_object</span><span class="p">.</span><span class="n">evaluated_get</span><span class="p">(</span><span class="n">depsgraph</span><span class="p">)</span>
-    <span class="n">me</span> <span class="o">=</span> <span class="n">mesh_eval</span><span class="p">.</span><span class="n">to_mesh</span><span class="p">()</span>
-    <span class="n">me</span><span class="p">.</span><span class="n">transform</span><span class="p">(</span><span class="n">my_object</span><span class="p">.</span><span class="n">matrix_world</span><span class="p">)</span>
-    <span class="n">me</span><span class="p">.</span><span class="n">transform</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
+    <span class="n">mat</span> <span class="o">=</span> <span class="n">default_camera</span><span class="p">.</span><span class="n">matrix_world</span><span class="p">.</span><span class="nf">normalized</span><span class="p">().</span><span class="nf">inverted</span><span class="p">()</span>
+    <span class="n">depsgraph</span> <span class="o">=</span> <span class="n">bpy</span><span class="p">.</span><span class="n">context</span><span class="p">.</span><span class="nf">evaluated_depsgraph_get</span><span class="p">()</span>
+    <span class="n">mesh_eval</span> <span class="o">=</span> <span class="n">my_object</span><span class="p">.</span><span class="nf">evaluated_get</span><span class="p">(</span><span class="n">depsgraph</span><span class="p">)</span>
+    <span class="n">me</span> <span class="o">=</span> <span class="n">mesh_eval</span><span class="p">.</span><span class="nf">to_mesh</span><span class="p">()</span>
+    <span class="n">me</span><span class="p">.</span><span class="nf">transform</span><span class="p">(</span><span class="n">my_object</span><span class="p">.</span><span class="n">matrix_world</span><span class="p">)</span>
+    <span class="n">me</span><span class="p">.</span><span class="nf">transform</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
 
     <span class="n">camera</span> <span class="o">=</span> <span class="n">default_camera</span><span class="p">.</span><span class="n">data</span>
-    <span class="n">frame</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">camera</span><span class="p">.</span><span class="n">view_frame</span><span class="p">(</span><span class="n">scene</span><span class="o">=</span><span class="n">scene</span><span class="p">)[:</span><span class="mi">3</span><span class="p">]]</span>
-    <span class="n">camera_persp</span> <span class="o">=</span> <span class="n">camera</span><span class="p">.</span><span class="nb">type</span> <span class="o">!=</span> <span class="s">'ORTHO'</span>
+    <span class="n">frame</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">camera</span><span class="p">.</span><span class="nf">view_frame</span><span class="p">(</span><span class="n">scene</span><span class="o">=</span><span class="n">scene</span><span class="p">)[:</span><span class="mi">3</span><span class="p">]]</span>
+    <span class="n">camera_persp</span> <span class="o">=</span> <span class="n">camera</span><span class="p">.</span><span class="nb">type</span> <span class="o">!=</span> <span class="sh">'</span><span class="s">ORTHO</span><span class="sh">'</span>
 
     <span class="n">lx</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">ly</span> <span class="o">=</span> <span class="p">[]</span>
@@ -269,8 +269,8 @@
 
         <span class="k">if</span> <span class="n">camera_persp</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">z</span> <span class="o">==</span> <span class="mf">0.0</span><span class="p">:</span>
-                <span class="n">lx</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-                <span class="n">ly</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+                <span class="n">lx</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+                <span class="n">ly</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">z</span> <span class="o">&lt;=</span> <span class="mf">0.0</span><span class="p">:</span>
                 <span class="k">continue</span>
             <span class="k">else</span><span class="p">:</span>
@@ -282,48 +282,48 @@
         <span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="n">co_local</span><span class="p">.</span><span class="n">x</span> <span class="o">-</span> <span class="n">min_x</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">max_x</span> <span class="o">-</span> <span class="n">min_x</span><span class="p">)</span>
         <span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="n">co_local</span><span class="p">.</span><span class="n">y</span> <span class="o">-</span> <span class="n">min_y</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">max_y</span> <span class="o">-</span> <span class="n">min_y</span><span class="p">)</span>
 
-        <span class="n">lx</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="n">ly</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+        <span class="n">lx</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">ly</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 
-    <span class="n">min_x</span> <span class="o">=</span> <span class="n">clamp</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">lx</span><span class="p">),</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
-    <span class="n">max_x</span> <span class="o">=</span> <span class="n">clamp</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">lx</span><span class="p">),</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
-    <span class="n">min_y</span> <span class="o">=</span> <span class="n">clamp</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">ly</span><span class="p">),</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
-    <span class="n">max_y</span> <span class="o">=</span> <span class="n">clamp</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">ly</span><span class="p">),</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">min_x</span> <span class="o">=</span> <span class="nf">clamp</span><span class="p">(</span><span class="nf">min</span><span class="p">(</span><span class="n">lx</span><span class="p">),</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">max_x</span> <span class="o">=</span> <span class="nf">clamp</span><span class="p">(</span><span class="nf">max</span><span class="p">(</span><span class="n">lx</span><span class="p">),</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">min_y</span> <span class="o">=</span> <span class="nf">clamp</span><span class="p">(</span><span class="nf">min</span><span class="p">(</span><span class="n">ly</span><span class="p">),</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">max_y</span> <span class="o">=</span> <span class="nf">clamp</span><span class="p">(</span><span class="nf">max</span><span class="p">(</span><span class="n">ly</span><span class="p">),</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
 
-    <span class="n">mesh_eval</span><span class="p">.</span><span class="n">to_mesh_clear</span><span class="p">()</span>
+    <span class="n">mesh_eval</span><span class="p">.</span><span class="nf">to_mesh_clear</span><span class="p">()</span>
 
     <span class="n">r</span> <span class="o">=</span> <span class="n">scene</span><span class="p">.</span><span class="n">render</span>
     <span class="n">fac</span> <span class="o">=</span> <span class="n">r</span><span class="p">.</span><span class="n">resolution_percentage</span> <span class="o">*</span> <span class="mf">0.01</span>
     <span class="n">dim_x</span> <span class="o">=</span> <span class="n">r</span><span class="p">.</span><span class="n">resolution_x</span> <span class="o">*</span> <span class="n">fac</span>
     <span class="n">dim_y</span> <span class="o">=</span> <span class="n">r</span><span class="p">.</span><span class="n">resolution_y</span> <span class="o">*</span> <span class="n">fac</span>
 
-    <span class="k">if</span> <span class="nb">round</span><span class="p">((</span><span class="n">max_x</span> <span class="o">-</span> <span class="n">min_x</span><span class="p">)</span> <span class="o">*</span> <span class="n">dim_x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="nb">round</span><span class="p">((</span><span class="n">max_y</span> <span class="o">-</span> <span class="n">min_y</span><span class="p">)</span> <span class="o">*</span> <span class="n">dim_y</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nf">round</span><span class="p">((</span><span class="n">max_x</span> <span class="o">-</span> <span class="n">min_x</span><span class="p">)</span> <span class="o">*</span> <span class="n">dim_x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="nf">round</span><span class="p">((</span><span class="n">max_y</span> <span class="o">-</span> <span class="n">min_y</span><span class="p">)</span> <span class="o">*</span> <span class="n">dim_y</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nf">return </span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
     
-    <span class="n">original_x</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">min_x</span> <span class="o">*</span> <span class="n">dim_x</span><span class="p">)</span>            <span class="c1"># X
-</span>    <span class="n">original_y</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">dim_y</span> <span class="o">-</span> <span class="n">max_y</span> <span class="o">*</span> <span class="n">dim_y</span><span class="p">)</span>    <span class="c1"># Y
-</span>    <span class="n">original_w</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="n">max_x</span> <span class="o">-</span> <span class="n">min_x</span><span class="p">)</span> <span class="o">*</span> <span class="n">dim_x</span><span class="p">)</span>  <span class="c1"># Width
-</span>    <span class="n">original_h</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="n">max_y</span> <span class="o">-</span> <span class="n">min_y</span><span class="p">)</span> <span class="o">*</span> <span class="n">dim_y</span><span class="p">)</span>  <span class="c1"># Height
+    <span class="n">original_x</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">min_x</span> <span class="o">*</span> <span class="n">dim_x</span><span class="p">)</span>            <span class="c1"># X
+</span>    <span class="n">original_y</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">dim_y</span> <span class="o">-</span> <span class="n">max_y</span> <span class="o">*</span> <span class="n">dim_y</span><span class="p">)</span>    <span class="c1"># Y
+</span>    <span class="n">original_w</span> <span class="o">=</span> <span class="nf">round</span><span class="p">((</span><span class="n">max_x</span> <span class="o">-</span> <span class="n">min_x</span><span class="p">)</span> <span class="o">*</span> <span class="n">dim_x</span><span class="p">)</span>  <span class="c1"># Width
+</span>    <span class="n">original_h</span> <span class="o">=</span> <span class="nf">round</span><span class="p">((</span><span class="n">max_y</span> <span class="o">-</span> <span class="n">min_y</span><span class="p">)</span> <span class="o">*</span> <span class="n">dim_y</span><span class="p">)</span>  <span class="c1"># Height
 </span>
     <span class="c1"># convert values to be compatible with YOLO label files
 </span>    <span class="c1"># &lt;object-class&gt; &lt;x_center&gt; &lt;y_center&gt; &lt;width&gt; &lt;height&gt;
-</span>    <span class="n">return_x</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="n">original_x</span> <span class="o">+</span> <span class="nb">round</span><span class="p">(</span><span class="n">original_w</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="o">/</span> <span class="n">RESOLUTION_X</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="c1"># center_x normal
-</span>    <span class="n">return_y</span> <span class="o">=</span> <span class="nb">round</span><span class="p">((</span><span class="n">original_y</span> <span class="o">+</span> <span class="nb">round</span><span class="p">(</span><span class="n">original_h</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="o">/</span> <span class="n">RESOLUTION_Y</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="c1"># center_y normal
-</span>    <span class="n">return_w</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">original_w</span> <span class="o">/</span> <span class="n">RESOLUTION_X</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>                         <span class="c1"># width normal
-</span>    <span class="n">return_h</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">original_h</span> <span class="o">/</span> <span class="n">RESOLUTION_Y</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>                         <span class="c1"># height normal
+</span>    <span class="n">return_x</span> <span class="o">=</span> <span class="nf">round</span><span class="p">((</span><span class="n">original_x</span> <span class="o">+</span> <span class="nf">round</span><span class="p">(</span><span class="n">original_w</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="o">/</span> <span class="n">RESOLUTION_X</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="c1"># center_x normal
+</span>    <span class="n">return_y</span> <span class="o">=</span> <span class="nf">round</span><span class="p">((</span><span class="n">original_y</span> <span class="o">+</span> <span class="nf">round</span><span class="p">(</span><span class="n">original_h</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="o">/</span> <span class="n">RESOLUTION_Y</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="c1"># center_y normal
+</span>    <span class="n">return_w</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">original_w</span> <span class="o">/</span> <span class="n">RESOLUTION_X</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>                         <span class="c1"># width normal
+</span>    <span class="n">return_h</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">original_h</span> <span class="o">/</span> <span class="n">RESOLUTION_Y</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>                         <span class="c1"># height normal
 </span>    
-    <span class="k">return</span> <span class="p">(</span><span class="n">return_x</span><span class="p">,</span> <span class="n">return_y</span><span class="p">,</span> <span class="n">return_w</span><span class="p">,</span> <span class="n">return_h</span><span class="p">)</span>
+    <span class="nf">return </span><span class="p">(</span><span class="n">return_x</span><span class="p">,</span> <span class="n">return_y</span><span class="p">,</span> <span class="n">return_w</span><span class="p">,</span> <span class="n">return_h</span><span class="p">)</span>
 
 <span class="c1"># generate .txt label files in the same folder
 </span><span class="k">def</span> <span class="nf">create_label_file</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="n">file_name</span> <span class="o">=</span> <span class="n">IMG_FOLDER_PATH</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="s">'.txt'</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s">"w+"</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
-        <span class="n">bounding_box</span> <span class="o">=</span> <span class="n">camera_view_bounds_2d</span><span class="p">()</span>
-        <span class="nb">file</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"0 "</span> <span class="o">+</span> <span class="s">' '</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="nb">format</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="s">'.6f'</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">bounding_box</span><span class="p">))</span>
+    <span class="n">file_name</span> <span class="o">=</span> <span class="n">IMG_FOLDER_PATH</span> <span class="o">+</span> <span class="nf">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="sh">'</span><span class="s">.txt</span><span class="sh">'</span>
+    <span class="k">with</span> <span class="nf">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="sh">"</span><span class="s">w+</span><span class="sh">"</span><span class="p">)</span> <span class="k">as</span> <span class="nb">file</span><span class="p">:</span>
+        <span class="n">bounding_box</span> <span class="o">=</span> <span class="nf">camera_view_bounds_2d</span><span class="p">()</span>
+        <span class="nb">file</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="sh">"</span><span class="s">0 </span><span class="sh">"</span> <span class="o">+</span> <span class="sh">'</span><span class="s"> </span><span class="sh">'</span><span class="p">.</span><span class="nf">join</span><span class="p">(</span><span class="nf">format</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="sh">'</span><span class="s">.6f</span><span class="sh">'</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">bounding_box</span><span class="p">))</span>
 
 <span class="c1"># uncomment to add object to blender
 # add_object()
-</span><span class="n">create_training_data</span><span class="p">()</span></code></pre></figure>
+</span><span class="nf">create_training_data</span><span class="p">()</span></code></pre></figure>
 
 <h4 id="step-by-step">Step by step</h4>
 
@@ -343,39 +343,39 @@
 
 <p>If you have paid attention you may see that the generated renders have transparent background and saved in png format. I decided to do this, because I didn’t found a simple solution for adding background in blender to the renders. I created a seperate script (NOT a Blender script), that can be executed after the first one completed. (Inspired by <a href="https://stackoverflow.com/questions/38627870/how-to-paste-a-png-image-with-transparency-to-another-image-in-pil-without-white/38629258">this</a> stackoverflow thread)</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">random</span>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="n">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="n">os</span>
+<span class="kn">import</span> <span class="n">random</span>
 
 <span class="c1"># Change these values for personal need
-</span><span class="n">OBJECT_NAME</span> <span class="o">=</span> <span class="s">"Penguin"</span>
-<span class="n">OBJECT_PATH</span> <span class="o">=</span> <span class="s">"/home/ekaktusz/Downloads/pingvin/PenguinBaseMesh.blend"</span>
-<span class="n">CAMERA_NAME</span> <span class="o">=</span> <span class="s">"Camera"</span>
-<span class="n">LIGHT_NAME</span> <span class="o">=</span> <span class="s">"Light"</span>
-<span class="n">IMG_FOLDER_PATH</span> <span class="o">=</span> <span class="s">"/home/ekaktusz/Pictures/test_data/"</span>
+</span><span class="n">OBJECT_NAME</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Penguin</span><span class="sh">"</span>
+<span class="n">OBJECT_PATH</span> <span class="o">=</span> <span class="sh">"</span><span class="s">/home/ekaktusz/Downloads/pingvin/PenguinBaseMesh.blend</span><span class="sh">"</span>
+<span class="n">CAMERA_NAME</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Camera</span><span class="sh">"</span>
+<span class="n">LIGHT_NAME</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Light</span><span class="sh">"</span>
+<span class="n">IMG_FOLDER_PATH</span> <span class="o">=</span> <span class="sh">"</span><span class="s">/home/ekaktusz/Pictures/test_data/</span><span class="sh">"</span>
 <span class="n">RESOLUTION_X</span> <span class="o">=</span> <span class="mi">960</span>
 <span class="n">RESOLUTION_Y</span> <span class="o">=</span> <span class="mi">720</span>
-<span class="n">BACKGROUND_PATH</span><span class="o">=</span> <span class="s">"/home/ekaktusz/Pictures/hatterek_training/"</span>
+<span class="n">BACKGROUND_PATH</span><span class="o">=</span> <span class="sh">"</span><span class="s">/home/ekaktusz/Pictures/hatterek_training/</span><span class="sh">"</span>
 <span class="n">NUM_OF_TRAINING_DATA</span> <span class="o">=</span> <span class="mi">10</span>
 
-<span class="n">background_files</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">BACKGROUND_PATH</span><span class="p">)</span>
-<span class="n">background_files</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="s">".directory"</span><span class="p">)</span>
+<span class="n">background_files</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="nf">listdir</span><span class="p">(</span><span class="n">BACKGROUND_PATH</span><span class="p">)</span>
+<span class="n">background_files</span><span class="p">.</span><span class="nf">remove</span><span class="p">(</span><span class="sh">"</span><span class="s">.directory</span><span class="sh">"</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">add_bacground_to_img</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="n">filename</span> <span class="o">=</span> <span class="n">IMG_FOLDER_PATH</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="s">'.png'</span>
-    <span class="n">ironman</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
-    <span class="n">filename1</span> <span class="o">=</span> <span class="n">BACKGROUND_PATH</span> <span class="o">+</span> <span class="n">random</span><span class="p">.</span><span class="n">choice</span><span class="p">(</span><span class="n">background_files</span><span class="p">)</span>
-    <span class="n">bg</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">filename1</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
-    <span class="n">text_img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s">'RGBA'</span><span class="p">,</span> <span class="p">(</span><span class="n">RESOLUTION_X</span><span class="p">,</span><span class="n">RESOLUTION_Y</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
-    <span class="n">text_img</span><span class="p">.</span><span class="n">paste</span><span class="p">(</span><span class="n">bg</span><span class="p">,</span> <span class="p">((</span><span class="n">text_img</span><span class="p">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">bg</span><span class="p">.</span><span class="n">width</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">text_img</span><span class="p">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">bg</span><span class="p">.</span><span class="n">height</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">))</span>
-    <span class="n">text_img</span><span class="p">.</span><span class="n">paste</span><span class="p">(</span><span class="n">ironman</span><span class="p">,</span> <span class="p">((</span><span class="n">text_img</span><span class="p">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">ironman</span><span class="p">.</span><span class="n">width</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">text_img</span><span class="p">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">ironman</span><span class="p">.</span><span class="n">height</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">),</span> <span class="n">mask</span><span class="o">=</span><span class="n">ironman</span><span class="p">)</span>
-    <span class="n">text_img</span> <span class="o">=</span> <span class="n">text_img</span><span class="p">.</span><span class="n">convert</span><span class="p">(</span><span class="s">'RGB'</span><span class="p">)</span>
-    <span class="n">text_img</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">IMG_FOLDER_PATH</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="s">".jpg"</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s">"jpeg"</span><span class="p">)</span>
-    <span class="n">os</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="n">IMG_FOLDER_PATH</span> <span class="o">+</span> <span class="nf">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="sh">'</span><span class="s">.png</span><span class="sh">'</span>
+    <span class="n">ironman</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="sh">'</span><span class="s">r</span><span class="sh">'</span><span class="p">)</span>
+    <span class="n">filename1</span> <span class="o">=</span> <span class="n">BACKGROUND_PATH</span> <span class="o">+</span> <span class="n">random</span><span class="p">.</span><span class="nf">choice</span><span class="p">(</span><span class="n">background_files</span><span class="p">)</span>
+    <span class="n">bg</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span><span class="n">filename1</span><span class="p">,</span> <span class="sh">'</span><span class="s">r</span><span class="sh">'</span><span class="p">)</span>
+    <span class="n">text_img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="sh">'</span><span class="s">RGBA</span><span class="sh">'</span><span class="p">,</span> <span class="p">(</span><span class="n">RESOLUTION_X</span><span class="p">,</span><span class="n">RESOLUTION_Y</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+    <span class="n">text_img</span><span class="p">.</span><span class="nf">paste</span><span class="p">(</span><span class="n">bg</span><span class="p">,</span> <span class="p">((</span><span class="n">text_img</span><span class="p">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">bg</span><span class="p">.</span><span class="n">width</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">text_img</span><span class="p">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">bg</span><span class="p">.</span><span class="n">height</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="n">text_img</span><span class="p">.</span><span class="nf">paste</span><span class="p">(</span><span class="n">ironman</span><span class="p">,</span> <span class="p">((</span><span class="n">text_img</span><span class="p">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">ironman</span><span class="p">.</span><span class="n">width</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">text_img</span><span class="p">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">ironman</span><span class="p">.</span><span class="n">height</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">),</span> <span class="n">mask</span><span class="o">=</span><span class="n">ironman</span><span class="p">)</span>
+    <span class="n">text_img</span> <span class="o">=</span> <span class="n">text_img</span><span class="p">.</span><span class="nf">convert</span><span class="p">(</span><span class="sh">'</span><span class="s">RGB</span><span class="sh">'</span><span class="p">)</span>
+    <span class="n">text_img</span><span class="p">.</span><span class="nf">save</span><span class="p">(</span><span class="n">IMG_FOLDER_PATH</span> <span class="o">+</span> <span class="nf">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="sh">"</span><span class="s">.jpg</span><span class="sh">"</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="sh">"</span><span class="s">jpeg</span><span class="sh">"</span><span class="p">)</span>
+    <span class="n">os</span><span class="p">.</span><span class="nf">remove</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NUM_OF_TRAINING_DATA</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"Processing "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s">". image..."</span><span class="p">)</span>
-    <span class="n">add_bacground_to_img</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></code></pre></figure>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">NUM_OF_TRAINING_DATA</span><span class="p">):</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Processing </span><span class="sh">"</span> <span class="o">+</span> <span class="nf">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="sh">"</span><span class="s">. image...</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">add_bacground_to_img</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></code></pre></figure>
 
 <h2 id="training">Training</h2>
 <p>And at this point I had everything to start the training. It can be easily done by following the <a href="https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects">official guide</a> for Darknet. Good luck!</p>

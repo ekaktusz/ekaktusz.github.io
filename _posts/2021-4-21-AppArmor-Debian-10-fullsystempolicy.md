@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AppArmor Full System Policy on Debian 10
+title: AppArmor full system policy on Debian 10
 excerpt_separator: <!--more-->
 ---
 Guide for using AppArmor with system wide Full System Policy for additional security on Debian 10 Buster.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Updated PX4 ROS Noetic Setup Script for Ubuntu 20.04 Focal Fossa
+title: PX4 ROS Noetic Setup Script for Ubuntu 20.04 Focal Fossa
 excerpt_separator: <!--more-->
 ---
 
