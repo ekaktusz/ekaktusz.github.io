@@ -130,11 +130,23 @@ a {
   color: #F1C40F;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
 }
-a:hover, a:active {
-  color: #F1C40F;
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #F1C40F;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
-
+a:hover::after, a:focus::after {
+  transform: scaleX(1);
+}
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
@@ -243,6 +255,10 @@ img {
   .site-name {
     color: #fff;
   }
+}
+
+.site-name a::after {
+  display: none !important;
 }
 
 .site-description {

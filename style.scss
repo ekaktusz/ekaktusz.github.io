@@ -80,9 +80,30 @@ p {
 a {
   color: $darkYellow;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
+  position: relative; // Needed for the pseudo-element
+
+  // Animated underline
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; // Adjust as needed
+    width: 100%;
+    height: 2px;
+    background: $darkYellow;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+  }
+
   &:hover, &:active {
-    color: $darkYellow;
+    //color: $darkYellow;
   }
 }
 
@@ -213,6 +234,12 @@ img {
   font-weight: bold;
   font-size: 28px;
   letter-spacing: 1px;
+}
+
+.site-name a {
+  &::after {
+    display: none !important;
+  }
 }
 
 .site-description {
