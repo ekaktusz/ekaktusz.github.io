@@ -235,7 +235,7 @@ img {
   color: #333;
   cursor: pointer;
   font-family: "Space Grotesk", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 28px;
   letter-spacing: 1px;
 }
@@ -286,7 +286,6 @@ nav a {
 @media screen and (max-width: 640px) {
   nav a {
     margin: 0 10px;
-    color: #4183C4;
   }
 }
 
