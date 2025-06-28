@@ -1,6 +1,7 @@
 ---
 layout: post
 title: C++ Platformer using SFML // Part 0. Beginnings
+published: false
 excerpt_separator: <!--more-->
 ---
 

@@ -2,6 +2,14 @@
 layout: default
 ---
 
+<div class="about-section" style="text-align: center;">
+  <img src="/images/cropped_circle_image.png" height="200" class="center"/>
+  <div>
+    Hello there! 👋 <br> I'm Csaba, a Software Engineer from Budapest. <br>
+    I like building games, native stuff, and making things work.
+  </div>
+</div>
+
 
 <div class="posts">
   {% for post in site.posts %}
@@ -9,7 +17,7 @@ layout: default
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <div class="post-date">
+      <div class="date">
         {{ post.date | date: "%B %e, %Y" }}
       </div>
 

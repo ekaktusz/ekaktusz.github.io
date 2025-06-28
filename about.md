@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /about/
+published: false
 ---
 <!-- 
 {:refdef: style="text-align: center;"}
@@ -13,5 +14,5 @@ permalink: /about/
 <div style="text-align: center;">
 I'm Csaba Ekart, Software Engineer from Budapest.<br>
 Like doing native stuff and games.<br>
-And just making things work.
+And just make things work.
 </div>
