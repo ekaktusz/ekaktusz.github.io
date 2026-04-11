@@ -21,7 +21,7 @@ Small jam game for Pirate Software Jam. Created in Godot with GDScript with seve
 ![banner](https://raw.githubusercontent.com/ekaktusz/elephant/master/assets/banner-github.png)
 [![Itch.io](https://img.shields.io/badge/Itch-%23FF0B34.svg?style=for-the-badge&logo=Itch.io&logoColor=white)](https://zahkros.itch.io/elephant-in-the-room)
 [![Made With PICO-8](https://img.shields.io/badge/Made%20With-PICO--8-ff004d.svg?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAlUlEQVQ4jWP8v5gBFTxOR%2BVXPfuPwp8SxIjCt%2BBG4TIxUBkMfgNZGIyi0IRmoobZxxeo0rcPocp%2FEEEJ08HvZaobyPj%2FjTpqmLAeJM2EtgMo3MHvZeqnw9X%2FXVHSUdhnP5Qw%2Fc%2B7CUVDS%2BsWFH6QpuyIT4cMT8xQBJI%2B1aHwj1%2F3RgnTVJbrKGH29egxFPWD38tUNxAAun4liexlTtMAAAAASUVORK5CYII%3D)](https://www.lexaloffle.com/bbs/?tid=50462)
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ekaktusz/harvest) 
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ekaktusz/elephant) 
 
 This small puzzle game with multiple levels and mechanics that was created as a submission for Github Game Off 2022 in PICO-8 and Lua. This was my first game jam. We finished on 4th place overall. I did the coding alone in approximately 10 days, and designed the website.
 

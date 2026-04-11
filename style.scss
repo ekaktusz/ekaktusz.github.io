@@ -81,29 +81,64 @@ a {
   color: $darkYellow;
   text-decoration: none;
   cursor: pointer;
-  position: relative; // Needed for the pseudo-element
+  background-image: linear-gradient($darkYellow, $darkYellow);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  transition: background-size 0.3s ease;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 
-  // Animated underline
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px; // Adjust as needed
-    width: 100%;
-    height: 2px;
-    background: $darkYellow;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    transform: scaleX(1);
+  &:hover,
+  &:focus {
+    background-size: 100% 2px;
   }
 
   &:hover, &:active {
     //color: $darkYellow;
+  }
+}
+
+a.link-underline-skip,
+a:has(img),
+a:has(svg),
+a:has(picture),
+a:has(video),
+a:has(canvas),
+a:has(.svg-icon) {
+  background-image: none;
+}
+
+a.link-underline-enhanced {
+  background-image: none;
+  position: relative;
+}
+
+a.link-underline-enhanced .link-underline-segment {
+  position: absolute;
+  left: var(--underline-left);
+  top: var(--underline-top);
+  width: var(--underline-width);
+  height: 2px;
+  background: $darkYellow;
+  pointer-events: none;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+a.link-underline-enhanced:hover .link-underline-segment,
+a.link-underline-enhanced:focus .link-underline-segment {
+  animation: link-underline-draw var(--underline-duration) ease forwards;
+  animation-delay: var(--underline-delay);
+}
+
+@keyframes link-underline-draw {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
   }
 }
 
@@ -237,9 +272,7 @@ img {
 }
 
 .site-name a {
-  &::after {
-    display: none !important;
-  }
+  background-image: none;
 }
 
 .site-description {

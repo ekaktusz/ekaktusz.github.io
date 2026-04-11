@@ -1,16 +1,54 @@
 
 .highlight {
-  padding: 7px 7px 7px 10px;
-  border: 1px solid #ddd;
-  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
-  margin: 20px 0 20px 0;
-  overflow: scroll;
+  margin: 24px 0;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+    #111315;
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(241, 196, 15, 0.55) rgba(255, 255, 255, 0.08);
+}
+
+.highlight pre {
+  margin: 0;
+  padding: 1rem 1.15rem;
+  min-width: max-content;
+  font-size: 0.9rem;
+}
+
+.highlight code {
+  display: block;
 }
 
 code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  font-family: 'JetBrains Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace;
+}
+
+.highlight::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+.highlight::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+
+.highlight::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgba(241, 196, 15, 0.45), rgba(241, 196, 15, 0.8));
+  border-radius: 999px;
+  border: 2px solid rgba(17, 19, 21, 0.9);
+}
+
+.highlight::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, rgba(241, 196, 15, 0.6), rgba(241, 196, 15, 0.95));
 }
 
 .highlight .c { color: #586E75 } /* Comment */
