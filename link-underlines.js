@@ -120,12 +120,23 @@
   }
 
   function enhanceAllLinks() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+
     document.querySelectorAll(selector).forEach(enhanceLink);
   }
 
   var resizeTimeout;
 
-  window.addEventListener("load", enhanceAllLinks);
+  window.addEventListener("load", function () {
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(enhanceAllLinks);
+      return;
+    }
+
+    enhanceAllLinks();
+  });
   window.addEventListener("resize", function () {
     window.clearTimeout(resizeTimeout);
     resizeTimeout = window.setTimeout(enhanceAllLinks, 100);

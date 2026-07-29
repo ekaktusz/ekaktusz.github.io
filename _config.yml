@@ -4,9 +4,21 @@
 
 # Name of your site (displayed in the header)
 name: csaba ekart
+title: csaba ekart
 
 # Short bio or description (displayed in the header)
 description: software engineer | hobby gamedev | likes hedgehogs
+lang: en
+author:
+  name: Csaba Ekart
+  url: "https://ekaktusz.github.io/"
+social:
+  name: Csaba Ekart
+  links:
+    - https://github.com/ekaktusz
+    - https://www.linkedin.com/in/csaba-ekart-538360146
+    - https://instagram.com/ekaktusz
+    - https://www.twitter.com/ekaktusz
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 #avatar: https://avatars.githubusercontent.com/ekaktusz
@@ -41,7 +53,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: "https://ekaktusz.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -72,13 +84,16 @@ kramdown:
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/og.png
   
 # Exclude these files from your production _site
 exclude:
@@ -86,4 +101,3 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - CNAME

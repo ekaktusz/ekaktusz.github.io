@@ -33,4 +33,3 @@ This small puzzle game with multiple levels and mechanics that was created as a 
 
 
 This narrative retro game was created as a submission for Ludum Dare 52 in the jam category. This was our second time with a game jam together. I've done all the coding alone in 72 hours with Lua and PICO-8. We finished on 65th place overall from 1632 entries.
-

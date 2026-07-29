@@ -74,7 +74,6 @@ h4 {
 
 p {
   margin: 15px 0;
-  text-align: justify;
 }
 
 a {
@@ -96,6 +95,26 @@ a {
 
   &:hover, &:active {
     //color: $darkYellow;
+  }
+}
+
+a:focus-visible {
+  outline: 2px solid $darkYellow;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  padding: 8px 12px;
+  color: $black;
+  background: $darkYellow;
+  transform: translateY(-150%);
+
+  &:focus {
+    transform: translateY(0);
   }
 }
 
@@ -220,6 +239,10 @@ img {
 }
 
 .masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
   @media (prefers-color-scheme: dark) {
@@ -227,35 +250,14 @@ img {
   }
 
   @include mobile {
+    flex-direction: column;
+    gap: 8px;
     text-align: center;
   }
 }
 
-// .site-avatar {
-//   float: left;
-//   width: 70px;
-//   height: 70px;
-//   margin-right: 15px;
-
-//   @include mobile {
-//     float: none;
-//     display: block;
-//     margin: 0 auto;
-//   }
-
-//   img {
-//     border-radius: 5px;
-//   }
-// }
-
 .site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+  min-width: 0;
 }
 
 .site-name {
@@ -287,20 +289,20 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
   font-family: $helveticaNeue;
   font-size: 18px;
 
   @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
+    justify-content: center;
+    gap: 10px 20px;
     font-size: 16px;
   }
 
   a {
-    margin-left: 20px;
     color: $darkGray;
     @media (prefers-color-scheme: dark) {
       color: $white;
@@ -309,9 +311,8 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
 
-    @include mobile {
-      margin: 0 10px;
-      //color: $blue;
+    &[aria-current="page"] {
+      font-weight: 700;
     }
   }
 }
@@ -353,6 +354,41 @@ nav {
   }
 }
 
+.post-navigation {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid $lightGray;
+  font-family: $spaceGrotesk;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $darkerGray;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.post-navigation__item--next {
+  grid-column: 2;
+  text-align: right;
+
+  @include mobile {
+    grid-column: 1;
+    text-align: left;
+  }
+}
+
+.post-navigation__label {
+  display: block;
+  color: $gray;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
@@ -370,6 +406,19 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@import "pages";
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

@@ -16,5 +16,20 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
+  <nav class="post-navigation" aria-label="Post navigation">
+    {% if page.previous %}
+      <a class="post-navigation__item" href="{{ site.baseurl }}{{ page.previous.url }}">
+        <span class="post-navigation__label">Previous</span>
+        {{ page.previous.title }}
+      </a>
+    {% endif %}
+    {% if page.next %}
+      <a class="post-navigation__item post-navigation__item--next" href="{{ site.baseurl }}{{ page.next.url }}">
+        <span class="post-navigation__label">Next</span>
+        {{ page.next.title }}
+      </a>
+    {% endif %}
+  </nav>
+
   {% include disqus.html %}
 </article>

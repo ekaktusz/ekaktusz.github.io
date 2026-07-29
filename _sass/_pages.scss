@@ -1,0 +1,29 @@
+.about-section {
+  max-width: 390px;
+  margin: 32px auto 20px;
+  text-align: center;
+
+  img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba($black, 0.07);
+  }
+}
+
+.about-text {
+  line-height: 1.5;
+}
+
+.divider {
+  width: 60px;
+  margin: 32px auto 24px;
+  border: 0;
+  border-top: 2px solid $lightGray;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: $darkerGray;
+  }
+}
