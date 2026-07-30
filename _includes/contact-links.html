@@ -1,0 +1,10 @@
+<p class="contact-links">
+  {% if site.footer-links.email %}<a href="mailto:{{ site.footer-links.email }}">email</a>{% endif %}
+  {% if site.footer-links.github %}<a href="https://github.com/{{ site.footer-links.github }}" rel="me">github</a>{% endif %}
+  {% if site.footer-links.linkedin %}<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" rel="me">linkedin</a>{% endif %}
+  {% if site.footer-links.instagram %}<a href="https://instagram.com/{{ site.footer-links.instagram }}" rel="me">instagram</a>{% endif %}
+  {% if site.footer-links.itch %}<a href="https://{{ site.footer-links.itch }}.itch.io/" rel="me">itch.io</a>{% endif %}
+  {% if site.footer-links.letterboxd %}<a href="https://letterboxd.com/{{ site.footer-links.letterboxd }}/" rel="me">letterboxd</a>{% endif %}
+  {% if site.footer-links.goodreads %}<a href="https://www.goodreads.com/user/show/{{ site.footer-links.goodreads }}" rel="me">goodreads</a>{% endif %}
+  {% if site.footer-links.youtube %}<a href="https://youtube.com/{{ site.footer-links.youtube }}" rel="me">youtube</a>{% endif %}
+</p>
