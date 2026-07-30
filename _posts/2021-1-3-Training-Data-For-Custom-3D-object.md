@@ -7,10 +7,6 @@ During my thesis work I faced the problem of how purely documented is the subjec
 
 <!--more-->
 
-<p class="toc-title">Contents</p>
-* Do not remove this line (it will not be displayed)
-{:toc}
-
 Note: Since I wrote this post, several other people tried this with (probably) more understandable and effective codes, so I recommend checking them as well: 
 - [Data generation with Blender](https://federicoarenasl.github.io/Data-Generation-with-Blender/)
 - [https://github.com/Danny-Dasilva/Blender-ML](https://github.com/Danny-Dasilva/Blender-ML)

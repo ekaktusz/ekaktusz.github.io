@@ -20,8 +20,8 @@ assets.
 
 - `index.html` uses `_layouts/default.html` and renders the short introduction
   and date/title post list.
-- `projects.md` uses `_layouts/page.html` and remains a hand-maintained
-  portfolio page.
+- `projects.md` uses `_layouts/page.html` as a project index grouped by type.
+  Its Games subsection renders a compact, newest-first list linked to itch.io.
 - Published files in `_posts/` use `_layouts/post.html`.
 - `404.md` uses the page layout and publishes at `/404.html`.
 - `about.md` is intentionally unpublished with `published: false`.
@@ -48,7 +48,10 @@ renaming a published post title can change its URL.
 - `_layouts/page.html`: static-page wrapper.
 - `_layouts/post.html`: blog-post wrapper.
 - `index.html`: homepage introduction and post list.
-- `projects.md`: minimal text-first portfolio content at `/projects/`.
+- `projects.md`: grouped project index at `/projects/`. The Games subsection
+  uses one bordered row per game, direct itch.io and public source links, and
+  short muted metadata covering date, jam, coding setup, and duration where
+  known.
 - `_posts/`: Markdown articles. Several intentionally use
   `published: false`; never publish them incidentally.
 - `images/`: local post, project, profile, error, and social-preview images.

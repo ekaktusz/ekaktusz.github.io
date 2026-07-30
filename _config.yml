@@ -35,6 +35,7 @@ footer-links:
   flickr:
   github: ekaktusz
   instagram: ekaktusz
+  itch: ekaktusz
   letterboxd: ekaktusz
   linkedin: csaba-ekart-538360146
   goodreads: 45604204-csaba-ekart
@@ -95,6 +96,7 @@ defaults:
   
 # Exclude these files from your production _site
 exclude:
+  - AGENTS.md
   - Gemfile
   - Gemfile.lock
   - LICENSE
