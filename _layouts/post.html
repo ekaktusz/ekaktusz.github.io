@@ -4,30 +4,18 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
+  <p class="post-date">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+  </p>
 
-  <p class="date">{{ page.date | date: "%B %e, %Y" }}</p>
-
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+  {{ content }}
 
   <nav class="post-navigation" aria-label="Post navigation">
     {% if page.previous %}
-      <a class="post-navigation__item" href="{{ site.baseurl }}{{ page.previous.url }}">
-        <span class="post-navigation__label">Previous</span>
-        {{ page.previous.title }}
-      </a>
+      <a href="{{ site.baseurl }}{{ page.previous.url }}">← {{ page.previous.title }}</a>
     {% endif %}
     {% if page.next %}
-      <a class="post-navigation__item post-navigation__item--next" href="{{ site.baseurl }}{{ page.next.url }}">
-        <span class="post-navigation__label">Next</span>
-        {{ page.next.title }}
-      </a>
+      <a class="post-navigation-next" href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }} →</a>
     {% endif %}
   </nav>
 

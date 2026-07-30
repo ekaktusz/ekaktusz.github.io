@@ -1,32 +1,27 @@
 ---
 layout: default
+title: Blog
 ---
 
-<div class="about-section">
-  <img src="{{ site.baseurl }}/images/cropped_circle_image.png" alt="Csaba Ekart"/>
-  <div class="about-text">
-    <strong>Hello there! 👋 I'm Csaba.</strong><br>
-    Software Engineer from Budapest.<br>
-    I enjoy building games, native stuff, and making things work.
-  </div>
-</div>
+<p>Hello there! I'm Csaba, a software engineer from Budapest. I enjoy building games, working close to the native stack, and making things work.</p>
 
-<hr class="divider"/>
-<div class="posts">
+<p class="contact-links">
+  {% if site.footer-links.email %}<a href="mailto:{{ site.footer-links.email }}">email</a>{% endif %}
+  {% if site.footer-links.github %}<a href="https://github.com/{{ site.footer-links.github }}" rel="me">github</a>{% endif %}
+  {% if site.footer-links.linkedin %}<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" rel="me">linkedin</a>{% endif %}
+  {% if site.footer-links.instagram %}<a href="https://instagram.com/{{ site.footer-links.instagram }}" rel="me">instagram</a>{% endif %}
+  {% if site.footer-links.letterboxd %}<a href="https://letterboxd.com/{{ site.footer-links.letterboxd }}/" rel="me">letterboxd</a>{% endif %}
+  {% if site.footer-links.goodreads %}<a href="https://www.goodreads.com/user/show/{{ site.footer-links.goodreads }}" rel="me">goodreads</a>{% endif %}
+  {% if site.footer-links.youtube %}<a href="https://youtube.com/{{ site.footer-links.youtube }}" rel="me">youtube</a>{% endif %}
+</p>
+
+<h1>Posts</h1>
+
+<ul class="post-list">
   {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="date">
-        {{ post.date | date: "%B %e, %Y" }}
-      </div>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
   {% endfor %}
-</div>
+</ul>

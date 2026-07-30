@@ -1,57 +1,28 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en' }}">
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    <link href="https://fonts.googleapis.com/css?family=Comic+Neue:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono:400,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Space+Grotesk:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-
-    <!--link rel="shortcut icon" type="image/png" href="favicon.png"-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml">
     {% seo %}
   </head>
-
   <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">🦔 {{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-          <nav aria-label="Primary navigation">
-            <a href="{{ site.baseurl }}/"{% if page.url == "/" %} aria-current="page"{% endif %}>blog</a>
-            <a href="{{ site.baseurl }}/projects/"{% if page.url == "/projects/" %} aria-current="page"{% endif %}>projects</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+    <header class="site-header">
+      <a class="site-title" href="{{ site.baseurl }}/">龴ↀ◡ↀ龴 {{ site.name }}</a>
+      <p class="site-description">{{ site.description }}</p>
+      <nav aria-label="Primary navigation">
+        <a href="{{ site.baseurl }}/"{% if page.url == "/" %} aria-current="page"{% endif %}>blog</a>
+        <a href="{{ site.baseurl }}/projects/"{% if page.url == "/projects/" %} aria-current="page"{% endif %}>projects</a>
+      </nav>
+    </header>
 
-    <div id="main" role="main" class="container">
+    <main id="main">
       {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer" aria-label="Social links">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+    </main>
 
     {% include analytics.html %}
-    <script src="{{ site.baseurl }}/link-underlines.js"></script>
   </body>
 </html>

@@ -7,30 +7,7 @@ During my thesis work I faced the problem of how purely documented is the subjec
 
 <!--more-->
 
-<style type="text/css">
-  // Adding 'Contents' headline to the TOC
-	#markdown-toc::before {
-	    content: "Contents";
-	    font-weight: bold;
-	}
-
-
-	// Using numbers instead of bullets for listing
-	#markdown-toc ul {
-	    list-style: decimal;
-	}
-
-	#markdown-toc {
-	    border: 1px solid #aaa;
-	    padding-left: 2em;
-	    padding-right: 2em;
-	    padding-top: 1em;
-	    padding-bottom: 1em;
-	    list-style: decimal;
-	    display: inline-block;
-	}
-</style>
-
+<p class="toc-title">Contents</p>
 * Do not remove this line (it will not be displayed)
 {:toc}
 

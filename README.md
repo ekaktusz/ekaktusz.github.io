@@ -3,9 +3,11 @@
 Source for Csaba Ekart's personal site and blog at
 [ekaktusz.github.io](https://ekaktusz.github.io).
 
-The site is built with Jekyll and published through GitHub Pages. It is based
-on Jekyll Now, with custom responsive styling, automatic light/dark themes,
-syntax highlighting, portfolio data, and animated multiline link underlines.
+The site is built with Jekyll and published through GitHub Pages. Its
+text-focused design is adapted from the minimal
+[JekyllBear](https://github.com/knhash/jekyllBear) theme, closely following
+Bear Blog's default Verdana typography, 800px reading column, automatic
+light/dark colors, and no client-side JavaScript.
 
 ## Local development
 
@@ -32,12 +34,10 @@ bundle exec ruby scripts/check_site.rb
 - `_config.yml` contains site identity, URL, social links, plugins, and Jekyll
   behavior.
 - `_layouts/` contains the shared document, page, and post templates.
-- `_includes/` contains reusable metadata, analytics, comments, and social-link
-  fragments.
+- `_includes/` contains optional analytics and comments fragments.
 - `_posts/` contains articles. Add `published: false` to keep a post as a draft.
 - `projects.md` contains the hand-maintained portfolio page.
-- `style.scss` is the stylesheet entry point; reusable Sass lives in `_sass/`.
-- `link-underlines.js` progressively enhances text-link underline animations.
+- `style.scss` contains the complete minimal theme.
 - `images/` contains local content and profile imagery.
 - `scripts/check_site.rb` checks generated local links and basic image/document
   accessibility requirements.
