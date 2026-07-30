@@ -18,7 +18,7 @@ You can also find them all [on my itch.io page](https://ekaktusz.itch.io/).
     <span class="project-meta">Spring 2026 · Shooter · Godot · Bullet Hell Jam 7 · team coding</span>
     <details class="project-details">
       <summary>details + screenshot</summary>
-      <p>Fight back a cloud of negative thoughts with positivity while dodging enough fire to keep your brain from frying. I worked on programming as part of Gerappa Games.</p>
+      <p>Fight back a cloud of negative thoughts with positivity while dodging enough fire to keep your brain from frying. Made for the Bullet Hell jam. Design & coding.</p>
       <img src="/images/games/brainrot.png" alt="Brainrot gameplay with the player fighting enemies in a colorful arena" loading="lazy">
     </details>
   </li>
@@ -42,7 +42,7 @@ You can also find them all [on my itch.io page](https://ekaktusz.itch.io/).
     <span class="project-meta">Autumn 2025 · Adventure · Godot · Game Off 2025 · team coding</span>
     <details class="project-details">
       <summary>details + screenshot</summary>
-      <p>Navigate the rough waters of Cape Loïc and uncover the mystery surrounding your father's disappearance. I worked on programming.</p>
+      <p>Navigate the rough waters of Cape Loïc and uncover the mystery surrounding your father's disappearance. Narrative, story driven atmosphere game. I worked on programming.</p>
       <img src="/images/games/the-tale-of-cape-loic.jpg" alt="The Tale of Cape Loïc gameplay on the open sea" loading="lazy">
     </details>
   </li>
@@ -54,7 +54,7 @@ You can also find them all [on my itch.io page](https://ekaktusz.itch.io/).
     <span class="project-meta">Autumn 2024 · Puzzle · Godot · Game Off 2024 · team coding</span>
     <details class="project-details">
       <summary>details + screenshot</summary>
-      <p>Complete missions for the N.U.T. secret agency, collecting nuts while remaining undetected. I worked on programming.</p>
+      <p>Complete missions for the N.U.T. secret agency, collecting nuts while remaining undetected. I worked on programming, had lot of fun with shaders and creating the level selector.</p>
       <img src="/images/games/agent-nut.jpg" alt="Agent NUT sneaking through a pixel-art mission" loading="lazy">
     </details>
   </li>
@@ -78,7 +78,7 @@ You can also find them all [on my itch.io page](https://ekaktusz.itch.io/).
     <span class="project-meta">Winter 2024 · Racing · Godot · Pirate Software Game Jam 14 · team coding</span>
     <details class="project-details">
       <summary>details + gameplay</summary>
-      <p>Keep Jean-Claude Van Damme balanced between two trucks, spread as wide as possible, and dodge obstacles for a high score. I worked on programming.</p>
+      <p>Keep Jean-Claude Van Damme balanced between two trucks, spread as wide as possible, and dodge obstacles for a high score. We actually got a shout out from ExcessiveProfanity as this one being one of his fav entries. We got bad scores nonetheless. Haha. Did coding.</p>
       <img src="/images/games/heels-on-fire.gif" alt="Animated Heels on Fire gameplay with a character balancing between two trucks" loading="lazy">
     </details>
   </li>
@@ -90,7 +90,7 @@ You can also find them all [on my itch.io page](https://ekaktusz.itch.io/).
     <span class="project-meta">Autumn 2023 · Interactive fiction · Godot · Cozy Fall Jam 2023 · solo coding · ~2 days</span>
     <details class="project-details">
       <summary>details + screenshot</summary>
-      <p>Run a cozy autumn teahouse, listen to your customers' stories, and discover the blend that will warm each of their souls. I handled the programming.</p>
+      <p>Run a cozy autumn teahouse, listen to your customers' stories, and discover the blend that will warm each of their souls. I handled the programming, and had very limited time due to personal reasons. So no end game screen haha.</p>
       <img src="/images/games/tearapy.jpg" alt="Tearapy's cozy teahouse interior in warm autumn colors" loading="lazy">
     </details>
   </li>
@@ -102,7 +102,7 @@ You can also find them all [on my itch.io page](https://ekaktusz.itch.io/).
     <span class="project-meta">Spring 2023 · PICO-8 · Ludum Dare 53 · solo coding · 72 hours</span>
     <details class="project-details">
       <summary>details + gameplay</summary>
-      <p>Buy low and sell high on the dance floor to repay the Bamboo Bandit before the party ends—without getting busted. I handled the programming.</p>
+      <p>Buy low and sell high on the dance floor to repay the Bamboo Bandit before the party ends—without getting busted. I think this is our best game, but it just doesn't get any love. I did the programming.</p>
       <img src="/images/games/groove-n-goods.gif" alt="Animated PICO-8 gameplay from Groove 'n' Goods on a busy dance floor" loading="lazy">
     </details>
   </li>
