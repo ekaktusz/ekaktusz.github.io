@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Play Warcraft 3 Frozen Throne Multiplayer With Your Friends | Guide
 ---
 
