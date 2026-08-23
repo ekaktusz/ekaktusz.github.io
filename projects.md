@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projects
+hide_title: true
 permalink: /projects/
 ---
 
