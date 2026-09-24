@@ -191,6 +191,7 @@ a:focus-visible {
 }
 
 .site-title {
+  display: block;
   background: var(--selection);
   color: var(--selection-text);
   font-family: "IBM Plex Mono", ui-monospace, monospace;
