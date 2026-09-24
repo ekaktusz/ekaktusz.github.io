@@ -3,6 +3,44 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+        const key = 'color-theme';
+
+        try {
+          const saved = localStorage.getItem(key);
+          if (saved === 'light' || saved === 'dark') root.dataset.theme = saved;
+        } catch (_) {}
+
+        document.addEventListener('DOMContentLoaded', () => {
+          const toggle = document.getElementById('theme-toggle');
+          const reset = document.getElementById('theme-reset');
+          const current = () => root.dataset.theme || (systemDark.matches ? 'dark' : 'light');
+          const update = () => {
+            toggle.textContent = current() === 'dark' ? 'light mode' : 'dark mode';
+            reset.hidden = !root.dataset.theme;
+          };
+
+          toggle.addEventListener('click', () => {
+            root.dataset.theme = current() === 'dark' ? 'light' : 'dark';
+            try { localStorage.setItem(key, root.dataset.theme); } catch (_) {}
+            update();
+          });
+
+          reset.addEventListener('click', () => {
+            delete root.dataset.theme;
+            try { localStorage.removeItem(key); } catch (_) {}
+            update();
+          });
+
+          systemDark.addEventListener('change', update);
+          toggle.hidden = false;
+          update();
+        });
+      })();
+    </script>
     <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
     <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml">
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
@@ -18,6 +56,10 @@
         <a href="{{ site.baseurl }}/"{% if page.url == "/" %} aria-current="page"{% endif %}>blog</a>
         <a href="{{ site.baseurl }}/projects/"{% if page.url == "/projects/" %} aria-current="page"{% endif %}>projects</a>
         <a href="{{ site.baseurl }}/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>about</a>
+        <span class="theme-controls">
+          <button id="theme-toggle" type="button" hidden></button>
+          <button id="theme-reset" type="button" hidden>auto</button>
+        </span>
       </nav>
     </header>
 
