@@ -191,7 +191,8 @@ a:focus-visible {
 }
 
 .site-title {
-  color: var(--heading);
+  background: var(--selection);
+  color: var(--selection-text);
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   font-size: 1.5em;
   font-weight: 700;
@@ -199,7 +200,7 @@ a:focus-visible {
 }
 
 .site-title:visited {
-  color: var(--heading);
+  color: var(--selection-text);
 }
 
 .site-description {
@@ -263,6 +264,7 @@ h6 {
   font-weight: 700;
 }
 
+.site-title,
 h1,
 h2,
 h3,
