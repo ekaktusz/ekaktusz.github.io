@@ -12,7 +12,7 @@ Maybe you read that you need additional tool like Lancraft. **You don't.** If yo
 
 ## 1. Download and install Hamachi / Zero Tier && Set Interface Metric
 Just follow the steps in this video:
-<iframe width="720" height="400" src="http://www.youtube.com/embed/Tv8oBe9jeVk" frameborder="0" allowfullscreen></iframe>
+<iframe class="video-embed" width="720" height="400" src="https://www.youtube.com/embed/Tv8oBe9jeVk" title="Installing and configuring Hamachi for Warcraft III LAN play on Windows 10" allowfullscreen></iframe>
 
 
 ## 2. Add exception to firewall
@@ -21,7 +21,7 @@ You're almost ready, but you have to add a firewall exception to the Warcraft 3 
 ## 3. Play
 Now you can enjoy the game. Yay!
 {:refdef: style="text-align: center;"}
-![My image Name](/images/arthas.jpeg)
+![Close-up of Arthas from Warcraft III](/images/arthas.jpeg)
 {: refdef}
 
 PS: If you still have issues, check the port in the gameplay settings. Should be set to the same, like 6112.

@@ -327,6 +327,15 @@ a img {
   vertical-align: middle;
 }
 
+.video-embed {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  aspect-ratio: 9 / 5;
+  border: 0;
+}
+
 blockquote {
   margin-left: 0;
   padding-left: 20px;

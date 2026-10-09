@@ -17,7 +17,7 @@ Either way this is still a 100% usable guide, and it worked once in 2020 so it s
 ## Why would you need this?
 
 {:refdef: style="text-align: center;"}
-![My image Name](/images/why.gif)
+![A girl giving a puzzled sideways glance](/images/why.gif)
 {: refdef}
 
 

@@ -5,7 +5,7 @@ hide_title: true
 permalink: /projects/
 ---
 
-## Games
+## games
 
 Games / game-jam entries, newest first. All are playable in the browser.
 You can also find them all [on my itch.io page](https://ekaktusz.itch.io/).
