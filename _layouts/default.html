@@ -42,6 +42,7 @@
       })();
     </script>
     <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+    <script src="{{ site.baseurl }}/assets/signal.js" defer></script>
     <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml">
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
     {% seo %}
@@ -50,7 +51,7 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-      <a class="site-title" href="{{ site.baseurl }}/">龴ↀ◡ↀ龴 {{ site.name }}</a>
+      <a class="site-title" href="{{ site.baseurl }}/"><span aria-hidden="true">龴ↀ◡ↀ龴</span> {{ site.name }}</a>
       <p class="site-description">{{ site.description }}</p>
       <nav aria-label="Primary navigation">
         <a href="{{ site.baseurl }}/"{% if page.url == "/" %} aria-current="page"{% endif %}>blog</a>
