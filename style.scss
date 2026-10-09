@@ -92,6 +92,7 @@
   --code-operator: #0550ae;
   --selection: #a9ef71;
   --selection-text: #1b1c1d;
+  --theme-toggle-background: #d7b8ff;
   --signal-cyan: #317f9b;
   --signal-magenta: #a44b85;
 }
@@ -117,6 +118,7 @@
   --code-operator: #79c0ff;
   --selection: #d7b8ff;
   --selection-text: #1b1c1d;
+  --theme-toggle-background: #a9ef71;
   --signal-cyan: #7ecad1;
   --signal-magenta: #d79abe;
 }
@@ -282,8 +284,7 @@ nav a[aria-current="page"] {
 
 .theme-controls button {
   padding: 0 6px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
+  border: 0;
   background: transparent;
   color: var(--link);
   cursor: pointer;
@@ -291,14 +292,18 @@ nav a[aria-current="page"] {
   font-size: 0.85em;
 }
 
-.theme-controls button:hover,
-.theme-controls button:focus-visible {
-  background: var(--selection);
+.theme-controls #theme-toggle {
+  background: var(--theme-toggle-background);
   color: var(--selection-text);
 }
 
+.theme-controls button:hover,
 .theme-controls button:focus-visible {
-  outline: 2px solid currentColor;
+  text-decoration: underline;
+}
+
+.theme-controls button:focus-visible {
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
 
