@@ -390,6 +390,13 @@ a img {
   border: 0;
 }
 
+.about-image {
+  display: block;
+  width: min(100%, 480px);
+  height: auto;
+  margin: 1.5em auto;
+}
+
 blockquote {
   margin-left: 0;
   padding-left: 20px;
