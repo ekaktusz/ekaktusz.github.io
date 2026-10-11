@@ -7,8 +7,8 @@ permalink: /projects/
 
 ## games
 
-Games / game-jam entries, newest first. All are playable in the browser.
-You can also find them all [on my itch.io page](https://ekaktusz.itch.io/).
+games / game-jam entries, newest first. all are playable in the browser, click on their title to play.
+you can also find them [on my itch.io page](https://ekaktusz.itch.io/).
 
 <ul class="project-list">
   <li>
