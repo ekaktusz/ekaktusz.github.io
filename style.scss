@@ -112,7 +112,6 @@
   --theme-toggle-background: #d7b8ff;
   --signal-cyan: #317f9b;
   --signal-magenta: #a44b85;
-  --dither-dot: rgba(34, 34, 34, 0.035);
 }
 
 @mixin dark-theme {
@@ -140,7 +139,6 @@
   --theme-toggle-background: #a9ef71;
   --signal-cyan: #7ecad1;
   --signal-magenta: #d79abe;
-  --dither-dot: rgba(238, 238, 238, 0.025);
 }
 
 :root[data-theme="dark"] {
@@ -160,8 +158,6 @@
 html {
   font-size: 16px;
   background-color: var(--background);
-  background-image: repeating-conic-gradient(var(--dither-dot) 0% 25%, transparent 0% 100%);
-  background-size: 4px 4px;
 }
 
 body {
@@ -239,33 +235,6 @@ a:focus-visible {
   font-size-adjust: none;
 }
 
-/* Ordered pixels fade into the title strip, beneath the lettering. */
-.site-title::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: url("images/dither.svg") repeat;
-  mask-image: linear-gradient(to right, transparent 20%, #000 100%);
-  pointer-events: none;
-}
-
-/* A finite interruption across the whole title strip. */
-.site-title::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: url("images/grain.svg") repeat,
-    repeating-linear-gradient(transparent 0 3px, rgba(27, 28, 29, 0.3) 3px 4px);
-  opacity: 0;
-  pointer-events: none;
-}
-
-.site-title.is-tuning::after {
-  animation: signal-scratch 850ms steps(1, end) both;
-}
-
 .site-title.is-tuning {
   animation: signal-type 850ms steps(1, end) both;
 }
@@ -279,17 +248,6 @@ a:focus-visible {
   54% { text-shadow: none; }
   67% { text-shadow: 1px 0 var(--signal-cyan), -1px 0 var(--signal-magenta); }
   78% { text-shadow: none; }
-}
-
-@keyframes signal-scratch {
-  0%, 100% { opacity: 0; clip-path: inset(0); transform: translateX(0); }
-  8% { opacity: 0.85; clip-path: inset(15% 0 45%); transform: translateX(-5px); }
-  19% { opacity: 0.5; clip-path: inset(50% 0 10%); transform: translateX(4px); }
-  31% { opacity: 0.15; clip-path: inset(0); transform: translateX(0); }
-  42% { opacity: 0.7; clip-path: inset(8% 0 70%); transform: translateX(-3px); }
-  54% { opacity: 0.25; clip-path: inset(64% 0 8%); transform: translateX(2px); }
-  68% { opacity: 0.1; clip-path: inset(0); transform: translateX(0); }
-  82% { opacity: 0; }
 }
 
 .site-title:visited {
@@ -750,7 +708,6 @@ td {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .site-title.is-tuning::after,
   .site-title.is-tuning {
     animation: none;
   }
@@ -758,4 +715,21 @@ td {
   * {
     scroll-behavior: auto !important;
   }
+}
+
+// Geometric ASCII border beneath each page’s content.
+.ascii-divider {
+  width: max-content;
+  max-width: 100%;
+  margin: 3rem auto 1rem;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  color: var(--visited);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: clamp(5px, 1.5vw, 12px);
+  line-height: 1.15;
+  white-space: pre;
+  overflow-wrap: normal;
+  border-radius: 0;
 }

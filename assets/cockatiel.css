@@ -1,0 +1,28 @@
+/* A quiet, transparent decoration below the homepage posts. */
+.ascii-cockatiel {
+  --bird-purple: 130, 70, 177;
+  --bird-green: 64, 115, 34;
+  font-size: 0.875rem;
+  width: 100%;
+  height: clamp(340px, 65vw, 480px);
+  margin: 48px auto 12px;
+  pointer-events: none;
+}
+
+.ascii-cockatiel canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+:root[data-theme="dark"] .ascii-cockatiel {
+  --bird-purple: 215, 184, 255;
+  --bird-green: 169, 239, 113;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .ascii-cockatiel {
+    --bird-purple: 215, 184, 255;
+    --bird-green: 169, 239, 113;
+  }
+}

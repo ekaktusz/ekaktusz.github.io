@@ -43,6 +43,10 @@
     </script>
     <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
     <script src="{{ site.baseurl }}/assets/signal.js" defer></script>
+    {% if page.ascii_cockatiel %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/cockatiel.css">
+    <script src="{{ site.baseurl }}/assets/cockatiel.js" defer></script>
+    {% endif %}
     <link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml">
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
     {% seo %}
@@ -67,6 +71,8 @@
     <main id="main">
       {{ content }}
     </main>
+
+    {% include ascii-divider.html %}
 
     {% include analytics.html %}
   </body>
