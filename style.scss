@@ -2,6 +2,22 @@
 ---
 
 @font-face {
+  font-family: "Deutsch Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/deutsch-gothic-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Chomsky";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/chomsky-regular.otf") format("opentype");
+}
+
+@font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 400;
@@ -91,10 +107,12 @@
   --code-variable: #953800;
   --code-operator: #0550ae;
   --selection: #a9ef71;
+  --heading-underline: var(--selection);
   --selection-text: #1b1c1d;
   --theme-toggle-background: #d7b8ff;
   --signal-cyan: #317f9b;
   --signal-magenta: #a44b85;
+  --dither-dot: rgba(34, 34, 34, 0.035);
 }
 
 @mixin dark-theme {
@@ -117,10 +135,12 @@
   --code-variable: #ffa657;
   --code-operator: #79c0ff;
   --selection: #d7b8ff;
+  --heading-underline: #8150a8;
   --selection-text: #1b1c1d;
   --theme-toggle-background: #a9ef71;
   --signal-cyan: #7ecad1;
   --signal-magenta: #d79abe;
+  --dither-dot: rgba(238, 238, 238, 0.025);
 }
 
 :root[data-theme="dark"] {
@@ -139,14 +159,16 @@
 
 html {
   font-size: 16px;
-  background: var(--background);
+  background-color: var(--background);
+  background-image: repeating-conic-gradient(var(--dither-dot) 0% 25%, transparent 0% 100%);
+  background-size: 4px 4px;
 }
 
 body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background: var(--background);
+  background: transparent;
   color: var(--text);
   font-family: "IBM Plex Mono", ui-monospace, monospace;
   line-height: 1.5;
@@ -204,10 +226,28 @@ a:focus-visible {
   display: block;
   background: var(--selection);
   color: var(--selection-text);
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 1.5em;
-  font-weight: 700;
+  font-family: "Deutsch Gothic", "IBM Plex Mono", sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
   text-decoration: none;
+}
+
+.site-title .site-mark {
+  font-family: "Chomsky", "IBM Plex Mono", sans-serif;
+  font-style: normal;
+  font-size: 0.833333em;
+  font-size-adjust: none;
+}
+
+/* Ordered pixels fade into the title strip, beneath the lettering. */
+.site-title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url("images/dither.svg") repeat;
+  mask-image: linear-gradient(to right, transparent 20%, #000 100%);
+  pointer-events: none;
 }
 
 /* A finite interruption across the whole title strip. */
@@ -318,24 +358,30 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-family: "Deutsch Gothic", "IBM Plex Mono", sans-serif;
   color: var(--heading);
   line-height: 1.25;
-  font-weight: 700;
+  font-weight: 400;
 }
 
-.site-title,
+.site-title {
+  text-decoration-line: underline;
+  text-decoration-color: var(--selection);
+  text-decoration-thickness: 0.3em;
+  text-underline-offset: -0.12em;
+  text-decoration-skip-ink: none;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  text-decoration-line: underline;
-  text-decoration-color: var(--selection);
-  text-decoration-thickness: 0.3em;
-  text-underline-offset: -0.12em;
-  text-decoration-skip-ink: none;
+  background-image: linear-gradient(var(--heading-underline), var(--heading-underline));
+  background-size: 100% 0.3em;
+  background-position: left calc(100% - 0.12em);
+  background-repeat: no-repeat;
 }
 
 strong,
@@ -345,17 +391,29 @@ b {
 
 h1 {
   margin-bottom: 0.5em;
-  font-size: 2em;
+  font-size: 2.4em;
 }
 
 h2 {
   margin-top: 1.5em;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 h3 {
   margin-top: 1.4em;
-  font-size: 1.17em;
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.8em;
 }
 
 p,
@@ -672,7 +730,7 @@ td {
   }
 
   .site-title {
-    font-size: clamp(1rem, 5.4vw, 1.5rem);
+    font-size: clamp(1.2rem, 6.48vw, 1.8rem);
     white-space: nowrap;
   }
 
