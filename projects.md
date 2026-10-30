@@ -7,6 +7,8 @@ permalink: /projects/
 
 ## games
 
+<img src="{{ '/images/games/games-banner-green-purple.png' | relative_url }}" alt="Purple halftone game artwork on a green background" width="2172" height="521">
+
 games / game-jam entries, newest first. all are playable in the browser, click on their title to play.
 you can also find them [on my itch.io page](https://ekaktusz.itch.io/).
 

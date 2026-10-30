@@ -347,14 +347,17 @@ b {
   color: var(--heading);
 }
 
+h1,
+h2 {
+  font-size: 1.8em;
+}
+
 h1 {
   margin-bottom: 0.5em;
-  font-size: 2.4em;
 }
 
 h2 {
   margin-top: 1.5em;
-  font-size: 1.8em;
 }
 
 h3 {
@@ -672,6 +675,7 @@ td {
 .contact-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   margin: 0 0 2.5em;
   color: var(--muted);
