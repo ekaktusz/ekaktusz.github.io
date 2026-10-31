@@ -7,7 +7,10 @@ permalink: /projects/
 
 ## games
 
-<img src="{{ '/images/games/games-banner-green-purple.png' | relative_url }}" alt="Purple halftone game artwork on a green background" width="2172" height="521">
+<div class="games-banner">
+  <img class="games-banner-light" src="{{ '/images/games/games-banner-glitch-light.png' | relative_url }}" alt="Glitch-styled game artwork in purple on a green background" width="2172" height="521">
+  <img class="games-banner-dark" src="{{ '/images/games/games-banner-glitch-dark.png' | relative_url }}" alt="Glitch-styled game artwork in green on a purple background" width="2172" height="521">
+</div>
 
 games / game-jam entries, newest first. all are playable in the browser, click on their title to play.
 you can also find them [on my itch.io page](https://ekaktusz.itch.io/).

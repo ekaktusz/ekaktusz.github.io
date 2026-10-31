@@ -405,6 +405,26 @@ a img {
   vertical-align: middle;
 }
 
+.games-banner img {
+  display: block;
+}
+
+.games-banner .games-banner-dark {
+  display: none;
+}
+
+:root[data-theme="dark"] .games-banner {
+  .games-banner-light { display: none; }
+  .games-banner-dark { display: block; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .games-banner {
+    .games-banner-light { display: none; }
+    .games-banner-dark { display: block; }
+  }
+}
+
 .video-embed {
   display: block;
   width: 100%;
