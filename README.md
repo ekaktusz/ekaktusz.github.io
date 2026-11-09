@@ -7,7 +7,7 @@ The site is built with Jekyll and published through GitHub Pages. Its
 text-focused design is adapted from the minimal
 [JekyllBear](https://github.com/knhash/jekyllBear) theme, closely following
 Bear Blog's default Verdana typography, 800px reading column, automatic
-light/dark colors, and no client-side JavaScript.
+light/dark colors, and an optional CRT screen effect.
 
 ## Local development
 
@@ -28,6 +28,16 @@ CI:
 JEKYLL_ENV=production bundle exec jekyll build
 bundle exec ruby scripts/check_site.rb
 ```
+
+## CRT controls
+
+Visitors can toggle the CRT effect on or off in the header. The default
+settings follow the current light or dark theme.
+
+Append `?crt=dev` to any page URL to reveal the full tuner, for example
+`http://127.0.0.1:4000/?crt=dev`. Developer adjustments save separately for
+light and dark mode in this browser and apply only while the URL has that
+parameter. "Reset this mode" restores the current theme's site defaults.
 
 ## Repository guide
 

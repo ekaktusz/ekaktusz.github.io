@@ -8,10 +8,16 @@
         const root = document.documentElement;
         const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
         const key = 'color-theme';
+        const crtKey = 'crt-effect';
 
         try {
           const saved = localStorage.getItem(key);
           if (saved === 'light' || saved === 'dark') root.dataset.theme = saved;
+        } catch (_) {}
+
+        try {
+          const saved = localStorage.getItem(crtKey);
+          if (saved === 'on' || saved === 'off') root.dataset.crt = saved;
         } catch (_) {}
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -43,6 +49,7 @@
     </script>
     <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
     <script src="{{ site.baseurl }}/assets/signal.js" defer></script>
+    <script src="{{ site.baseurl }}/assets/crt.js" defer></script>
     {% if page.ascii_cockatiel %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/cockatiel.css">
     <script src="{{ site.baseurl }}/assets/cockatiel.js" defer></script>
@@ -54,6 +61,7 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <div class="crt-screen">
     <header class="site-header">
       <a class="site-title" href="{{ site.baseurl }}/"><span class="site-mark" aria-hidden="true">龴ↀ◡ↀ龴</span> {{ site.name }}</a>
       <p class="site-description">{{ site.description }}</p>
@@ -64,6 +72,8 @@
         <span class="theme-controls">
           <button id="theme-toggle" type="button" hidden></button>
           <button id="theme-reset" type="button" hidden>auto</button>
+          <button id="crt-toggle" type="button" title="Toggle the CRT screen effect" aria-pressed="true" hidden>crt on</button>
+          <button id="crt-settings" type="button" aria-controls="crt-panel" aria-expanded="false" hidden>tune crt</button>
         </span>
       </nav>
     </header>
@@ -73,6 +83,9 @@
     </main>
 
     {% include ascii-divider.html %}
+    </div>
+
+    {% include crt-controls.html %}
 
     {% include analytics.html %}
   </body>
