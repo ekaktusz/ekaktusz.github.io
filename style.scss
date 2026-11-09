@@ -441,6 +441,32 @@ a img {
   margin: 1.5em auto;
 }
 
+.not-found {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.not-found h1 {
+  margin: 0;
+  background: none;
+  font-size: 2.8em;
+}
+
+.not-found .not-found-message {
+  margin: 0.25em 0 1.5em;
+  color: var(--muted);
+}
+
+.not-found-image {
+  display: block;
+  width: min(100%, 480px);
+  margin: 0 auto;
+  -webkit-mask-image: url("assets/404-mist-mask.svg");
+  mask-image: url("assets/404-mist-mask.svg");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
 blockquote {
   margin-left: 0;
   padding-left: 20px;

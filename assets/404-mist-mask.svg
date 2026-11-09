@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">
+  <defs>
+    <radialGradient id="mist">
+      <stop offset="0.35" stop-color="white"/>
+      <stop offset="0.55" stop-color="white" stop-opacity="0.9"/>
+      <stop offset="0.74" stop-color="white" stop-opacity="0.4"/>
+      <stop offset="0.92" stop-color="white" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="drifting-mist" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.012" numOctaves="3" seed="8" result="clouds"/>
+      <feDisplacementMap in="SourceGraphic" in2="clouds" scale="100" xChannelSelector="R" yChannelSelector="G"/>
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+  <g filter="url(#drifting-mist)">
+    <ellipse cx="475" cy="320" rx="435" ry="310" fill="url(#mist)"/>
+    <ellipse cx="250" cy="385" rx="160" ry="145" fill="url(#mist)" opacity="0.22"/>
+    <ellipse cx="735" cy="265" rx="125" ry="175" fill="url(#mist)" opacity="0.15"/>
+  </g>
+</svg>
